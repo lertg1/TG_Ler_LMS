@@ -3,6 +3,7 @@ package com.tg.lms_backend.Controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,8 +36,21 @@ public class BookController {
 		return bookService.saveBook(book);
 	}
 	
-	@PutMapping
-	public Book updateBook(@PathVariable int id, )
-	
+	@PutMapping("/{id}")
+	public Book updateBook(@PathVariable int id, @RequestBody Book bookDetails) {
+		Book book = bookService.getBookById(id);
+		if (book != null) {
+			book.setBookTitle(bookDetails.getBookTitle());
+			book.setAuthor(bookDetails.getAuthor());
+			book.setIsbn(bookDetails.getIsbn());
+			book.setCategory(bookDetails.getCategory());
+			return bookService.saveBook(book);
+		}
+		return null;
+	}
+	@DeleteMapping("/{id}")
+	public void deleteBook(@PathVariable int id) {
+		bookService.deleteBook(id);
+	}
 
 }

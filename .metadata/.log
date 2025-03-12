@@ -672,3 +672,26 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-12 22:24:06.746
 !MESSAGE Classpath changed for project: lms-backend
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-12 22:26:01.574
+!MESSAGE Classpath changed for project: lms-backend
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-03-12 22:26:01.576
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IClasspathEntry.getPath()" because the return value of "org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.getJreContainer(org.eclipse.jdt.core.IClasspathEntry[])" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IClasspathEntry.getPath()" because the return value of "org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.getJreContainer(org.eclipse.jdt.core.IClasspathEntry[])" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:98)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-12 22:26:01.721
+!MESSAGE Classpath changed for project: lms-backend
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-12 22:26:01.721
+!MESSAGE Boot project ADDED: lms-backend
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-12 22:26:01.780
+!MESSAGE Classpath changed for project: lms-backend
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-12 22:26:02.264
+!MESSAGE Classpath changed for project: lms-backend

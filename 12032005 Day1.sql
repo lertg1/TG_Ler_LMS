@@ -24,3 +24,10 @@ create table tbl_users(
 insert into tbl_users (user_id, user_name, user_password, user_email, user_status) values(1, 'lertg','123456','lertg1@gmail.com','active');
 select * from tbl_users;
 insert into tbl_users (user_id, user_name, user_password, user_email, user_status) values(2, 'john','123456','john@gmail.com','active');
+alter table tbl_books 
+add column publisher varchar(100),
+add column genre varchar(50),
+add column call_number varchar(100),
+add column book_cover_url varchar(200),
+add column loaned boolean,
+add column due_date datetime;

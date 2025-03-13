@@ -26,12 +26,18 @@ public class BookService {
 	}
 	
 	public Book updateBook(int id, Book bookDetails) {
-		Book book = bookRepository.findById(id).orElse(null);
+		Book book = bookRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Book not found with id "+id));
 		if (book !=null) {
 			book.setBookTitle(bookDetails.getBookTitle());
 			book.setAuthor(bookDetails.getAuthor());
 			book.setIsbn(bookDetails.getIsbn());
 			book.setCategory(bookDetails.getCategory());
+			book.setBookCoverUrl(bookDetails.getBookCoverUrl());
+			book.setCallNumber(bookDetails.getCallNumber());
+			book.setDueDate(bookDetails.getDueDate());
+			book.setGenre(bookDetails.getGenre());
+			book.setLoaned(bookDetails.getLoaned());
+			book.setPublisher(bookDetails.getPublisher());
 			return bookRepository.save(book);
 		}
 		return null;

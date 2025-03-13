@@ -3,6 +3,7 @@ package com.tg.lms_backend.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tg.lms_backend.model.User;
+import com.tg.lms_backend.repository.UserRepository;
 import com.tg.lms_backend.service.UserService;
 
 @RestController
@@ -58,6 +60,23 @@ public class UserController {
 	public ResponseEntity<User> deleteBook(@PathVariable int id){
 		userService.deleteUser(id);
 		return ResponseEntity.noContent().build();
+	}
+	
+	// User sign up
+	@PostMapping("/signup")
+	public ResponseEntity<User> registerUser(@RequestBody SignUpDto signUpDto){
+		if(UserRepository.existsByUsername(signUpDto.getUsername())) {
+			return new ResponseEntity<>("Username is already taken", HttpStatus.BAD_REQUEST);
+		}
+		if(UserRepository.existsByEmain(signUpDto.getEmail())) {
+			return new ResponseEntity<>("Email is already take",HttpStatus.BAD_REQUEST);
+		}
+		User user = new User();
+		user.setUserName(signUpDto.getUsername());
+		user.setUserEmail(signUpDto.getEmail());
+		user.setPassword(passwordEncoder.encode(signUpDto.getPassword()));
+		user.setUserStatus("Active");
+		UserRepository.save(user);
 	}
 
 }

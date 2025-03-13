@@ -14,6 +14,22 @@ public class UserService {
 	@Autowired
 	private UserRepository userRepository;
 	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
+	
+	public User registerUser(User user) {
+		user.setUserPassword(passwordEncoder.encode(user.getUserPassword()));
+		user.setUserStatus("Active");
+	}
+	
+	public User authenticateUser(String email, String password) {
+		User user = userRepository.findByUserEmail(email).orElseThrow(()-> new UsernameNotFoundException("User not found with email :"+email));
+		if (passwordEncoder.matches(password, user.getUserPassword())) {
+			return user;
+		} else {
+			throw new BadCredentialException("Invalid credentials");
+		}
+	}
 	public User saveUser(User user) {
 		// TODO Auto-generated method stub
 		return userRepository.save(user);

@@ -1,12 +1,12 @@
 package com.tg.lms_backend.service;
-import com.tg.lms_backend.ResourceNotFoundException;
-import com.tg.lms_backend.model.Book;
-import com.tg.lms_backend.repository.*;
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.tg.lms_backend.ResourceNotFoundException;
+import com.tg.lms_backend.model.Book;
+import com.tg.lms_backend.repository.BookRepository;
 
 @Service
 public class BookService {

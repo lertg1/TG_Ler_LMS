@@ -1,4 +1,5 @@
-package com.tg.lms_backend;
+package com.tg.lms_backend.service;
+import com.tg.lms_backend.ResourceNotFoundException;
 import com.tg.lms_backend.model.Book;
 import com.tg.lms_backend.repository.*;
 

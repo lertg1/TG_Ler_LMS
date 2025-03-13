@@ -32,15 +32,19 @@ public class UserService {
 	public User updateUser(int id, User userDetails) {
 		// TODO Auto-generated method stub
 		User user = userRepository.findById(id).orElse(null);
-		if(user!=null) {
+		if(userDetails.getUserName() != null) {
 			user.setUserName(userDetails.getUserName());
-			user.setUserPassword(userDetails.getUserPassword());
-			user.setUserEmail(userDetails.getUserEmail());
-			user.setUserStatus(userDetails.getUserStatus());
-			user.setUpdatedAt(userDetails.getUpdatedAt());		
-			return userRepository.save(user);
 		}
-		return null;
+		if(userDetails.getUserPassword() !=null) {
+			user.setUserPassword(userDetails.getUserPassword());
+		}
+		if(userDetails.getUserEmail() !=null) {
+			user.setUserEmail(userDetails.getUserEmail());
+		}
+		if(userDetails.getUserStatus() !=null) {
+			user.setUserStatus(userDetails.getUserStatus());
+		}
+			return userRepository.save(user);
 		
 	}
 

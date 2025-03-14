@@ -3,31 +3,45 @@ package com.tg.lms_backend.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
 import com.tg.lms_backend.model.User;
 import com.tg.lms_backend.repository.UserRepository;
 
 @Service
-public class UserService {
+public class UserService implements UserDetailsService {
 
 	@Autowired
 	private UserRepository userRepository;
 	
-	@Autowired
-	private PasswordEncoder passwordEncoder;
+	@Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        User user = userRepository.findByUserEmail(username)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + username));
+        
+        return org.springframework.security.core.userdetails.User
+                .withUsername(user.getUserEmail())
+                .password(user.getUserPassword())
+                .roles("USER")
+                .build();
+    }
 	
-	public User registerUser(User user) {
+	public User registerUser(User user, PasswordEncoder passwordEncoder) {
 		user.setUserPassword(passwordEncoder.encode(user.getUserPassword()));
 		user.setUserStatus("Active");
+		return userRepository.save(user);
 	}
 	
-	public User authenticateUser(String email, String password) {
+	public User authenticateUser(String email, String password, PasswordEncoder passwordEncoder) {
 		User user = userRepository.findByUserEmail(email).orElseThrow(()-> new UsernameNotFoundException("User not found with email :"+email));
 		if (passwordEncoder.matches(password, user.getUserPassword())) {
 			return user;
 		} else {
-			throw new BadCredentialException("Invalid credentials");
+			throw new BadCredentialsException("Invalid credentials");
 		}
 	}
 	public User saveUser(User user) {

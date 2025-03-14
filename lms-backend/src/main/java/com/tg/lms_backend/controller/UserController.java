@@ -62,21 +62,5 @@ public class UserController {
 		return ResponseEntity.noContent().build();
 	}
 	
-	// User sign up
-	@PostMapping("/signup")
-	public ResponseEntity<User> registerUser(@RequestBody SignUpDto signUpDto){
-		if(UserRepository.existsByUsername(signUpDto.getUsername())) {
-			return new ResponseEntity<>("Username is already taken", HttpStatus.BAD_REQUEST);
-		}
-		if(UserRepository.existsByEmain(signUpDto.getEmail())) {
-			return new ResponseEntity<>("Email is already take",HttpStatus.BAD_REQUEST);
-		}
-		User user = new User();
-		user.setUserName(signUpDto.getUsername());
-		user.setUserEmail(signUpDto.getEmail());
-		user.setPassword(passwordEncoder.encode(signUpDto.getPassword()));
-		user.setUserStatus("Active");
-		UserRepository.save(user);
-	}
 
 }

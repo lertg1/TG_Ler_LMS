@@ -36,6 +36,7 @@ const UserRegistration = () => {
                 <input type="text" name="userName" value={user.userName} onChange={handleChange} placeholder='User Name' required />
                 <input type="email" name="userEmail" value={user.userEmail} onChange={handleChange} placeholder='Email Address' required />
                 <input type="password" name="userPassword" value={user.userPassword} onChange={handleChange} placeholder='Password' required />
+                <input type="text" name="userRole" value={user.userRole} onChange={handleChange} placeholder='Role' required />
                 <button type="submit">Register</button>
             </form>
         );

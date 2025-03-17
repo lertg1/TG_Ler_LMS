@@ -16,6 +16,7 @@ public class User {
 	private String userEmail;
 	private String userPassword;
 	private String userStatus;
+	private String userRole;
 	private Date createdAt;
 	private Date updatedAt;
 	
@@ -24,7 +25,7 @@ public class User {
 		
 	};
 	
-	public User(int userId, String userName, String userEmail, String userPassword, String userStatus, Date createdAt,
+	public User(int userId, String userName, String userEmail, String userPassword, String userStatus, String userRole, Date createdAt,
 			Date updatedAt) {
 		super();
 		this.userId = userId;
@@ -32,6 +33,7 @@ public class User {
 		this.userEmail = userEmail;
 		this.userPassword = userPassword;
 		this.userStatus = userStatus;
+		this.userRole = userRole;
 		this.createdAt = createdAt;
 		this.updatedAt = updatedAt;
 	}
@@ -75,6 +77,14 @@ public class User {
 
 	public void setUserStatus(String userStatus) {
 		this.userStatus = userStatus;
+	}
+
+	public String getUserRole() {
+		return userRole;
+	}
+
+	public void setUserRole(String userRole) {
+		this.userRole = userRole;
 	}
 
 	public Date getCreatedAt() {

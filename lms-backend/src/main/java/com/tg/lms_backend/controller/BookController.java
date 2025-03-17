@@ -20,7 +20,7 @@ import com.tg.lms_backend.service.BookService;
 
 @RestController
 @RequestMapping("/api/books")
-@CrossOrigin(origins="/localhost:5173/")
+@CrossOrigin(origins="/localhost:3000/")
 public class BookController {
 
 	@Autowired

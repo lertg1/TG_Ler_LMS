@@ -21,7 +21,7 @@ import com.tg.lms_backend.service.UserService;
 
 @RestController
 @RequestMapping("/api/users")
-@CrossOrigin(origins="/localhost:5173")
+@CrossOrigin(origins="/localhost:3000")
 public class UserController {
 	
 	@Autowired

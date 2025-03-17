@@ -74,6 +74,12 @@ public class UserService implements UserDetailsService {
 		if(userDetails.getUserStatus() !=null) {
 			user.setUserStatus(userDetails.getUserStatus());
 		}
+		if(userDetails.getUserRole() !=null) {
+			user.setUserRole(userDetails.getUserRole());
+		}
+		if(userDetails.getUserDepartment() !=null) {
+			user.setUserDepartment(userDetails.getUserDepartment());
+		}
 			return userRepository.save(user);
 		
 	}

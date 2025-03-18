@@ -42,7 +42,7 @@ const UserLogin = () => {
             <input type="password" name="userPassword" value={loginData.userPassword} onChange={handleChange} placeholder='Password' required/>
             <button type="submit">Login</button>
         </form>
-       
+
     );
 }
 

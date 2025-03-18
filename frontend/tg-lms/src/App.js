@@ -30,9 +30,9 @@ function App() {
           </p>
           <div className="button-group">
             <Button variant="contained" endIcon={<LoginTwoTone />} size="medium" 
-             href = "/login"
+             component ={Link} to= "/login"
             >Login</Button>
-            <Button variant="contained" size="medium" href = "/register">Register as Member</Button>
+            <Button variant="contained" size="medium" component={Link} to= "/register">Register as Member</Button>
           </div>
         </div>
       </main>

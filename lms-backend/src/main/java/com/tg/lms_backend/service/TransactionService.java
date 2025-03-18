@@ -35,10 +35,10 @@ public class TransactionService {
 		if(transactionDetails.getTransactionDate() !=null) {
 			transaction.setTransactionDate(transactionDetails.getTransactionDate());
 		}
-		if(transactionDetails.getUserID() !=0) {
+		if(transactionDetails.getUserID() !=null) {
 			transaction.setUserID(transactionDetails.getUserID());
 		}
-		if(transactionDetails.getBookID() !=0) {
+		if(transactionDetails.getBookID() !=null) {
 			transaction.setBookID(transactionDetails.getBookID());
 		}
 		if(transactionDetails.getDueDate() !=null) {

@@ -34,6 +34,22 @@ add column due_date datetime;
 alter table tbl_users 
 modify column user_role varchar(50) not null,
 modify column user_department varchar(50);
+alter table tbl_users
+add column user_fines decimal(10,2);
+alter table tbl_books
+add column loaned_to int,
+add foreign key (loaned_to) references tbl_users(user_id); 
+create table tbl_transactions(
+transaction_id int primary key not null,
+transaction_type varchar(50) not null,
+transaction_date timestamp default current_timestamp,
+user_id int,
+book_id int,
+foreign key(user_id) references tbl_users(user_id),
+foreign key(book_id) references tbl_books(book_id),
+due_date datetime,
+returned_date datetime);
+select * from tbl_transactions;
 
 
 

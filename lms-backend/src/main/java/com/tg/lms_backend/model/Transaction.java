@@ -4,6 +4,7 @@ import java.sql.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -14,8 +15,10 @@ public class Transaction {
 private int transactionId;
 private String transactionType;
 private Date transactionDate;
-private int userID;
-private int bookID;
+@ManyToOne
+private User userID;
+@ManyToOne
+private Book bookID;
 private Date dueDate;
 private Date returnedDate;
 
@@ -24,7 +27,7 @@ public Transaction() {
 	
 };
 
-public Transaction(int transactionId, String transactionType, Date transactionDate, int userID, int bookID,
+public Transaction(int transactionId, String transactionType, Date transactionDate, User userID, Book bookID,
 		Date dueDate, Date returnedDate) {
 	super();
 	this.transactionId = transactionId;
@@ -60,19 +63,19 @@ public void setTransactionDate(Date transactionDate) {
 	this.transactionDate = transactionDate;
 }
 
-public int getUserID() {
+public User getUserID() {
 	return userID;
 }
 
-public void setUserID(int userID) {
+public void setUserID(User userID) {
 	this.userID = userID;
 }
 
-public int getBookID() {
+public Book getBookID() {
 	return bookID;
 }
 
-public void setBookID(int bookID) {
+public void setBookID(Book bookID) {
 	this.bookID = bookID;
 }
 

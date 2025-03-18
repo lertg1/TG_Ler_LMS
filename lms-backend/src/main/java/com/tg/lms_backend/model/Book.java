@@ -24,14 +24,14 @@ public class Book {
 	private Date dueDate;
 	
 	@ManyToOne
-	private int loanedTo; 
+	private User loanedTo; 
 	
 	//Constructors
 	public Book() {
 		
 	}
 	
-	public Book(int bookId, String bookTitle, String author, String isbn, String category, String publisher, String genre, String callNumber, String bookCoverUrl, Boolean loaned, Date dueDate, int loanedTo) {
+	public Book(int bookId, String bookTitle, String author, String isbn, String category, String publisher, String genre, String callNumber, String bookCoverUrl, Boolean loaned, Date dueDate, User loanedTo) {
 		this.bookId = bookId;
 		this.bookTitle = bookTitle;
 		this.author = author;
@@ -91,9 +91,9 @@ public class Book {
 
 	public void setDueDate(Date dueDate) {this.dueDate = dueDate;}
 
-	public int getLoanedTo() {return loanedTo;}
+	public User getLoanedTo() {return loanedTo;}
 
-	public void setLoanedTo(int loanedTo) {this.loanedTo = loanedTo;}
+	public void setLoanedTo(User loanedTo) {this.loanedTo = loanedTo;}
 	
 
 }

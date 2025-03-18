@@ -26,12 +26,23 @@ const UserLogin = () => {
         }
     };
     
+    const handleResetPassword = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post('http://localhost:8080/api/auth/reset-password', loginData);
+            console.log(response.data);
+        }
+        catch (error) {
+            console.error('Error', error);
+        }
+    }
     return (
         <form onSubmit={handleSubmit}>
             <input type="email" name="userEmail" value={loginData.userEmail} onChange={handleChange} placeholder='Email' required/>
             <input type="password" name="userPassword" value={loginData.userPassword} onChange={handleChange} placeholder='Password' required/>
             <button type="submit">Login</button>
         </form>
+       
     );
 }
 

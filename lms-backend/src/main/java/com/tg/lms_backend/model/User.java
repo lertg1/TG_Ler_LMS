@@ -20,6 +20,7 @@ public class User {
 	private String userDepartment;
 	private Date createdAt;
 	private Date updatedAt;
+	private Number userFine;
 	
 	// Constructor
 	public User() {
@@ -27,7 +28,7 @@ public class User {
 	};
 	
 	public User(int userId, String userName, String userEmail, String userPassword, String userStatus, String userRole, String userDepartment, Date createdAt,
-			Date updatedAt) {
+			Date updatedAt, Number userFine) {
 		super();
 		this.userId = userId;
 		this.userName = userName;
@@ -38,6 +39,7 @@ public class User {
 		this.userDepartment = userDepartment;
 		this.createdAt = createdAt;
 		this.updatedAt = updatedAt;
+		this.userFine=userFine;
 	}
 	
 //Getters and Setters
@@ -111,6 +113,14 @@ public class User {
 
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
+	}
+
+	public Number getUserFine() {
+		return userFine;
+	}
+
+	public void setUserFine(Number userFine) {
+		this.userFine = userFine;
 	}
 	
 

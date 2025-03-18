@@ -4,6 +4,7 @@ import java.sql.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -22,12 +23,15 @@ public class Book {
 	private Boolean loaned;
 	private Date dueDate;
 	
+	@ManyToOne
+	private int loanedTo; 
+	
 	//Constructors
 	public Book() {
 		
 	}
 	
-	public Book(int bookId, String bookTitle, String author, String isbn, String category, String publisher, String genre, String callNumber, String bookCoverUrl, Boolean loaned, Date dueDate) {
+	public Book(int bookId, String bookTitle, String author, String isbn, String category, String publisher, String genre, String callNumber, String bookCoverUrl, Boolean loaned, Date dueDate, int loanedTo) {
 		this.bookId = bookId;
 		this.bookTitle = bookTitle;
 		this.author = author;
@@ -39,6 +43,7 @@ public class Book {
 		this.bookCoverUrl = bookCoverUrl;
 		this.loaned = loaned;
 		this.callNumber = callNumber;
+		this.loanedTo=loanedTo;
 	}
 	
 	//Getters and Setters
@@ -85,5 +90,10 @@ public class Book {
 	public Date getDueDate() {return dueDate;}
 
 	public void setDueDate(Date dueDate) {this.dueDate = dueDate;}
+
+	public int getLoanedTo() {return loanedTo;}
+
+	public void setLoanedTo(int loanedTo) {this.loanedTo = loanedTo;}
+	
 
 }

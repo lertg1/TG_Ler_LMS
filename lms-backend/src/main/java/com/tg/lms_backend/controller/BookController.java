@@ -60,5 +60,21 @@ public class BookController {
         bookService.deleteBook(id);
         return ResponseEntity.noContent().build();
     }
+    
+    //Borrow a book
+    @PostMapping("/{bookId}/borrow/{userId}")
+    public ResponseEntity<Book> borrowBook(@PathVariable int bookId, @PathVariable int userId){
+    	Book borrowedBook=bookService.borrowBook(bookId,  userId);
+    	return ResponseEntity.ok(borrowedBook);
+    }	
+    //Return a book
+    @PostMapping("/{bookId}/return")
+    public ResponseEntity<Book> returnBook(@PathVariable int bookId) {
+    	Book returnedBook = bookService.returnBook(bookId);
+    	return ResponseEntity.ok(returnedBook);
+    }
+    	
+    	
+    }
+    
 	
-}

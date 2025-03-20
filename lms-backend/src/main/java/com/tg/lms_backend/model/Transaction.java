@@ -1,6 +1,7 @@
 package com.tg.lms_backend.model;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

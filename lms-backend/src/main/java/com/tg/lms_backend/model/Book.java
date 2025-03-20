@@ -1,6 +1,6 @@
 package com.tg.lms_backend.model;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -21,7 +21,7 @@ public class Book {
 	private String callNumber;
 	private String bookCoverUrl;
 	private Boolean loaned;
-	private Date dueDate;
+	private LocalDate dueDate;
 	
 	@ManyToOne
 	private User loanedTo; 
@@ -31,7 +31,7 @@ public class Book {
 		
 	}
 	
-	public Book(int bookId, String bookTitle, String author, String isbn, String category, String publisher, String genre, String callNumber, String bookCoverUrl, Boolean loaned, Date dueDate, User loanedTo) {
+	public Book(int bookId, String bookTitle, String author, String isbn, String category, String publisher, String genre, String callNumber, String bookCoverUrl, Boolean loaned, LocalDate dueDate, User loanedTo) {
 		this.bookId = bookId;
 		this.bookTitle = bookTitle;
 		this.author = author;
@@ -45,8 +45,12 @@ public class Book {
 		this.callNumber = callNumber;
 		this.loanedTo=loanedTo;
 	}
-	
-	//Getters and Setters
+	// Other methods		
+	public LocalDate calculateDueDate(int days) {
+	LocalDate today=LocalDate.now();
+	return today.plusDays(days);
+	}			
+		//Getters and Setters
 	public int getBookId() {return bookId;}
 
 	public void setBookId(int bookId) {this.bookId = bookId;}
@@ -87,9 +91,9 @@ public class Book {
 
 	public void setLoaned(Boolean loaned) {this.loaned = loaned;}
 
-	public Date getDueDate() {return dueDate;}
+	public LocalDate getDueDate() {return dueDate;}
 
-	public void setDueDate(Date dueDate) {this.dueDate = dueDate;}
+	public void setDueDate(LocalDate dueDate) {this.dueDate = dueDate;}
 
 	public User getLoanedTo() {return loanedTo;}
 

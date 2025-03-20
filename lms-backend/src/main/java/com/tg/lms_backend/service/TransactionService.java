@@ -4,6 +4,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.tg.lms_backend.ResourceNotFoundException;
 import com.tg.lms_backend.model.Transaction;
 import com.tg.lms_backend.repository.TransactionRepository;
 
@@ -18,7 +19,9 @@ public class TransactionService {
 	public List<Transaction> getAllTransactions(){
 		return transactionRepository.findAll();
 	}
-	
+	public Transaction addTransaction(Transaction transaction ) {
+		return transactionRepository.save(transaction);
+	}
 	public Transaction getTransactionById(int id) {
 		return transactionRepository.findById(id).orElse(null);
 	}
@@ -28,7 +31,8 @@ public class TransactionService {
 	}
 	
 	public Transaction updateTransaction(int id, Transaction transactionDetails) {
-		Transaction transaction = transactionRepository.findById(id).orElse(null);
+		Transaction transaction = transactionRepository.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("Transaction not found"));
 		if(transactionDetails.getTransactionType() !=null) {
 			transaction.setTransactionType(transactionDetails.getTransactionType());
 		}

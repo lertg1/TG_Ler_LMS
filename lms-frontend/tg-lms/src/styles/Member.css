@@ -1,0 +1,78 @@
+.member-dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .dashboard-content {
+    flex: 1;
+    padding: 24px;
+    background-color: #f5f8fa;
+  }
+  
+  .browse-section,
+  .history-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .browse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .browse-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .browse-controls {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .filter-button {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .filter-button:hover {
+    border-color: #4a6fa5;
+  }
+  
+  .filter-button.active {
+    background-color: #4a6fa5;
+    color: white;
+    border-color: #4a6fa5;
+  }
+  
+  .history-section h2 {
+    margin: 0 0 24px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .browse-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .browse-controls {
+      width: 100%;
+    }
+  }
+  
+  

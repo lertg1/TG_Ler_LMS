@@ -1,0 +1,54 @@
+.book-search {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .search-button {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .search-button:hover {
+    background-color: #3a5a8c;
+  }
+  
+  .clear-button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 16px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .clear-button:hover {
+    border-color: #999;
+  }
+  
+  @media (max-width: 500px) {
+    .book-search {
+      flex-wrap: wrap;
+    }
+  
+    .search-input {
+      width: 100%;
+    }
+  }
+  
+  

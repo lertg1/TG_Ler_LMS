@@ -39,11 +39,11 @@ public class TransactionService {
 		if(transactionDetails.getTransactionDate() !=null) {
 			transaction.setTransactionDate(transactionDetails.getTransactionDate());
 		}
-		if(transactionDetails.getUserID() !=null) {
-			transaction.setUserID(transactionDetails.getUserID());
+		if(transactionDetails.getUserId() !=null) {
+			transaction.setUserId(transactionDetails.getUserId());
 		}
-		if(transactionDetails.getBookID() !=null) {
-			transaction.setBookID(transactionDetails.getBookID());
+		if(transactionDetails.getBookId() !=null) {
+			transaction.setBookId(transactionDetails.getBookId());
 		}
 		if(transactionDetails.getDueDate() !=null) {
 			transaction.setDueDate(transactionDetails.getDueDate());

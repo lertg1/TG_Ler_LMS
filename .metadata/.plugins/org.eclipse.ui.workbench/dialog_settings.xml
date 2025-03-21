@@ -2,9 +2,9 @@
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="651"/>
-		<item key="DIALOG_Y_ORIGIN" value="167"/>
-		<item key="DIALOG_WIDTH" value="619"/>
-		<item key="DIALOG_HEIGHT" value="619"/>
+		<item key="DIALOG_Y_ORIGIN" value="162"/>
+		<item key="DIALOG_WIDTH" value="734"/>
+		<item key="DIALOG_HEIGHT" value="893"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 	<section name="NewWizardAction">
@@ -35,8 +35,8 @@
 	</section>
 	<section name="ZipFileExportWizard">
 		<section name="ZipFileExportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="550"/>
-			<item key="DIALOG_Y_ORIGIN" value="187"/>
+			<item key="DIALOG_X_ORIGIN" value="667"/>
+			<item key="DIALOG_Y_ORIGIN" value="204"/>
 			<item key="DIALOG_WIDTH" value="691"/>
 			<item key="DIALOG_HEIGHT" value="617"/>
 			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>

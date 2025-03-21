@@ -1,20 +1,35 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { Box, Button } from '@mui/material';
+import { LoginTwoTone } from '@mui/icons-material';
+import landingPage from './components/landingPage';
+import resetPassword from './components/resetPassword';
 import UserRegistration from './components/userRegistration';
 import UserLogin from './components/userLogin';
-import BookManagement from './components/bookManagement';
-import UserManagement from './components/userManagement';
-import Circulation from './components/circulation';
 import OPAC from './components/opac';
-import Reports from './components/reports';
-import { Box, Button } from '@mui/material'; 
-import { LoginTwoTone } from '@mui/icons-material'; 
+import memberPage from './components/memberPage';
+import adminPage from './components/adminPage';
+
 
 function App() {
   return (
     <Router>
-      <Box sx={{ '&button':{m:5}}}>
+
+      <Switch>
+        <Route path="/" exact Component={landingPage} />
+        <Route path="/login" component={UserLogin} />
+        <Route path="/register" component={UserRegistration} />
+        <Route path="/reset-password" component={resetPassword} />        
+        <Route path="/member" component={memberPage} />
+        <Route path="/admin" component={adminPage} />
+        <Route path="/opac" component={OPAC} />
+      </Switch>
+    </Router>
+  );
+}
+    
+      {/* <Box sx={{ '&button':{m:5}}}>
       <div className="flex min-h-screen felx-col">
         <header className="bg-primary text-primary-foreground py-6">
           <div className="container mx-auto px-4">
@@ -76,8 +91,8 @@ function App() {
         <Route path="/reports" element={<Reports />} />
         </Routes>
       </Box>
-    </Router>
+    
   );
-}
+} */}
 
 export default App;

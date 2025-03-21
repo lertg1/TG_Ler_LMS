@@ -1,10 +1,9 @@
 package com.tg.lms_backend.service;
+//import java.util.Date;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.core.support.TransactionalRepositoryFactoryBeanSupport;
 import org.springframework.stereotype.Service;
 
 import com.tg.lms_backend.BookNotAvailableException;
@@ -28,6 +27,9 @@ public class BookService {
 	
 	@Autowired
 	private UserRepository userRepository;
+	
+	@Autowired
+	private TransactionRepository transactionRepository;
 	
 	
 	public List<Book> getAllBooks(){
@@ -76,7 +78,8 @@ public class BookService {
 		}
 			return bookRepository.save(book);
 	}
-
+	
+@Transactional	
 	public Book borrowBook(int bookId, int userId) {
 		// Retrieve the book by ID
 		Book book = bookRepository.findById(bookId)
@@ -95,25 +98,36 @@ public class BookService {
 		LocalDate dueDate = book.calculateDueDate(14);
 		// Set the due date for the book
 		book.setDueDate(dueDate);
-//		Book savedBook = bookRepository.save(book);
-		return bookRepository.save(book);
-		
+		Book savedBook = bookRepository.save(book);
+		createTransaction(savedBook, user, java.sql.Date.valueOf(dueDate), null,"Borrow");
+		return savedBook;
+}
+
 		// Create a new transaction
-//		Transaction transaction = new Transaction();
-//		transaction.setBookID(savedBook);
-//		transaction.setUserID(user);
-//		transaction.setDueDate(java.sql.Date.valueOf(dueDate));
-//		transactionRepository.save(transaction);
-//
-//		return savedBook;
-		
+@Transactional	
+public Transaction createTransaction(Book book, User user, Date dueDate, Date returnedDate, String transactionType) {
+		Transaction transaction = new Transaction();
+		transaction.setBookId(book);
+		transaction.setUserId(user);
+		transaction.setDueDate(dueDate);
+		transaction.setReturnedDate(returnedDate);
+		// Use java.util.Date to get the current date and convert it to java.sql.Date
+		Date transactionDate = new java.sql.Date(System.currentTimeMillis());
+		transaction.setTransactionDate(transactionDate);
+		transaction.setTransactionType(transactionType);
+		return transactionRepository.save(transaction);		
 	}
+
 	public Book returnBook(int bookId) {
 		Book book = bookRepository.findById(bookId).orElseThrow(( )-> new RuntimeException("Book not found"));
+		User user = book.getLoanedTo();
 		book.setLoaned(false);
 		book.setLoanedTo(null);
 		book.setDueDate(null);
-		return bookRepository.save(book);
+		Date returnedDate = new java.sql.Date(System.currentTimeMillis());
+		Book savedBook = bookRepository.save(book);
+		createTransaction(savedBook, user, null, returnedDate, "Return");
+		return savedBook;
 
 	}
 	public void deleteBook(int id) {

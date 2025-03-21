@@ -4,7 +4,10 @@ import java.sql.Date;
 import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
@@ -13,13 +16,16 @@ import jakarta.persistence.Table;
 
 public class Transaction {
 @Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
 private int transactionId;
 private String transactionType;
 private Date transactionDate;
 @ManyToOne
-private User userID;
+@JoinColumn(name ="user_id",  nullable = false)
+private User userId;
 @ManyToOne
-private Book bookID;
+@JoinColumn(name="book_id", nullable = false)
+private Book bookId;
 private Date dueDate;
 private Date returnedDate;
 
@@ -28,14 +34,14 @@ public Transaction() {
 	
 };
 
-public Transaction(int transactionId, String transactionType, Date transactionDate, User userID, Book bookID,
+public Transaction(int transactionId, String transactionType, Date transactionDate, User userId, Book bookId,
 		Date dueDate, Date returnedDate) {
 	super();
 	this.transactionId = transactionId;
 	this.transactionType = transactionType;
 	this.transactionDate = transactionDate;
-	this.userID = userID;
-	this.bookID = bookID;
+	this.userId = userId;
+	this.bookId = bookId;
 	this.dueDate = dueDate;
 	this.returnedDate = returnedDate;
 }
@@ -64,20 +70,20 @@ public void setTransactionDate(Date transactionDate) {
 	this.transactionDate = transactionDate;
 }
 
-public User getUserID() {
-	return userID;
+public User getUserId() {
+	return userId;
 }
 
-public void setUserID(User userID) {
-	this.userID = userID;
+public void setUserId(User userId) {
+	this.userId = userId;
 }
 
-public Book getBookID() {
-	return bookID;
+public Book getBookId() {
+	return bookId;
 }
 
-public void setBookID(Book bookID) {
-	this.bookID = bookID;
+public void setBookId(Book bookId) {
+	this.bookId = bookId;
 }
 
 public Date getDueDate() {

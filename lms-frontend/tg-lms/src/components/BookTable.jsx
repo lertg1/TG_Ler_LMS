@@ -1,5 +1,3 @@
-"use client"
-
 import "../styles/Tables.css"
 
 function BookTable({ books, loading, pagination, onPageChange, onEdit, onDelete }) {

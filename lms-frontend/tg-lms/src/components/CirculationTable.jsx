@@ -1,5 +1,3 @@
-"use client"
-
 import "../styles/Tables.css"
 
 function CirculationTable({ borrows, loading, pagination, onPageChange, onReturn }) {

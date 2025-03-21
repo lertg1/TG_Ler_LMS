@@ -15,21 +15,7 @@ import adminPage from './components/adminPage';
 function App() {
   return (
     <Router>
-
-      <Switch>
-        <Route path="/" exact Component={landingPage} />
-        <Route path="/login" component={UserLogin} />
-        <Route path="/register" component={UserRegistration} />
-        <Route path="/reset-password" component={resetPassword} />        
-        <Route path="/member" component={memberPage} />
-        <Route path="/admin" component={adminPage} />
-        <Route path="/opac" component={OPAC} />
-      </Switch>
-    </Router>
-  );
-}
-    
-      {/* <Box sx={{ '&button':{m:5}}}>
+      <Box sx={{ '&button':{m:5}}}>
       <div className="flex min-h-screen felx-col">
         <header className="bg-primary text-primary-foreground py-6">
           <div className="container mx-auto px-4">
@@ -84,15 +70,15 @@ function App() {
         <Routes>
         <Route path="/register" element={<UserRegistration />} />
         <Route path="/login" element={<UserLogin />} />
-        <Route path="/admin/book-management" element={<BookManagement />} />
-        <Route path="/admin/user-management" element={<UserManagement />} />
-        <Route path="/circulation" element={<Circulation />} />
+        {/* <Route path="/admin/book-management" element={<BookManagement />} /> */}
+        {/* <Route path="/admin/user-management" element={<UserManagement />} /> */}
+        {/* <Route path="/circulation" element={<Circulation />} /> */}
         <Route path="/opac" element={<OPAC />} />
-        <Route path="/reports" element={<Reports />} />
+        {/* <Route path="/reports" element={<Reports />} /> */}
         </Routes>
       </Box>
-    
+    </Router>
   );
-} */}
+} 
 
 export default App;

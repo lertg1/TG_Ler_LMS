@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { borrowBook } from "../services/circulationService"
 import "../styles/BookBrowser.css"

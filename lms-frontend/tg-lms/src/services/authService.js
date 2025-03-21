@@ -1,8 +1,10 @@
 import { api } from "./api"
+import axios from "axios"
 
 export const loginUser = async (email, password) => {
   try {
     const response = await api.post("/auth/login", { email, password })
+    console.log(response.data)
     return response.data
   } catch (error) {
     throw handleError(error)

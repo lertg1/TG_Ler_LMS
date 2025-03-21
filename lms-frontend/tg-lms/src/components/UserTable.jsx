@@ -1,5 +1,3 @@
-"use client"
-
 import "../styles/Tables.css"
 
 function UserTable({ users, loading, pagination, onPageChange, onEdit, onDelete }) {

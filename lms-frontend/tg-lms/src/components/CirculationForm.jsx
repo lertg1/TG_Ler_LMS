@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { getUsers } from "../services/userService"
 import { getBooks } from "../services/bookService"

@@ -1,14 +1,15 @@
-"use client"
-
+// Desc: Login page for users to login to their account
 import { useState } from "react"
 import { Link, useNavigate, useLocation } from "react-router-dom"
 import { useAuth } from "../../contexts/AuthContext"
 import "../../styles/Auth.css"
+import axios from "axios"
 
 function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
-  const [errorMessage, setErrorMessage] = useState("")
+  const [errorMessage, setErrorMessage] = useState("")  
+  const [successMessage, setSuccessMessage] = useState("")
   const { login, loading } = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
@@ -19,6 +20,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setErrorMessage("")
+    setSuccessMessage("")
 
     if (!email || !password) {
       setErrorMessage("Please enter both email and password")
@@ -26,16 +28,26 @@ function Login() {
     }
 
     try {
-      const user = await login(email, password)
+      const user = await axios.post("http://localhost:8080/api/auth/login", {
+        userEmail: email, userPassword: password
+      })
+      setSuccessMessage("Login successful! Redirecting...")
+      // await login(email, password)
 
       // Redirect based on role
-      if (user.role === "STAFF") {
+      if (user.role === "staff") {
         navigate("/admin")
       } else {
         navigate("/member")
       }
-    } catch (err) {
-      setErrorMessage(err.message || "Failed to log in")
+    } catch (error) {
+      if (error.response) {
+      console.error(error.response.data.message);
+
+      } else {
+        console.error("An unexpected error occured");
+    }
+      setErrorMessage(error.message || "Failed to login")
     }
   }
 
@@ -48,13 +60,14 @@ function Login() {
         </div>
 
         {errorMessage && <div className="auth-error">{errorMessage}</div>}
+        {successMessage && <div className="auth-success">{successMessage}</div>}
 
         <form onSubmit={handleSubmit} className="auth-form">
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
               type="email"
-              id="email"
+              name ="userEmail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
@@ -66,7 +79,7 @@ function Login() {
             <label htmlFor="password">Password</label>
             <input
               type="password"
-              id="password"
+              name ="userPassword"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"

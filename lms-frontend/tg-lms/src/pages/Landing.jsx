@@ -1,5 +1,3 @@
-"use client"
-
 import { useNavigate } from "react-router-dom"
 import { useAuth } from "../contexts/AuthContext"
 import "../styles/Landing.css"

@@ -1,5 +1,4 @@
-"use client"
-
+// Desc: Admin dashboard statistics
 import { useState, useEffect } from "react"
 import "../styles/AdminStats.css"
 import { api } from "../services/api"

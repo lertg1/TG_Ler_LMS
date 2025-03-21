@@ -11,4 +11,6 @@ import com.tg.lms_backend.model.User;
 public interface UserRepository extends JpaRepository<User, Integer>{
 	Optional<User> findByUserEmail(String email);
 
+
+boolean existsByUserEmail(String userEmail);
 }

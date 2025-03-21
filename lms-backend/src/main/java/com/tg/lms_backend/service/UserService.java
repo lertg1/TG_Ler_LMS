@@ -31,7 +31,14 @@ public class UserService implements UserDetailsService {
     }
 	
 	public User registerUser(User user, PasswordEncoder passwordEncoder) {
-		user.setUserPassword(passwordEncoder.encode(user.getUserPassword()));
+		if(user.getUserId() !=0 && userRepository.existsById(user.getUserId())) {
+			throw new IllegalArgumentException("User ID already exists.");
+		}
+		if (userRepository.existsByUserEmail(user.getUserEmail())) {
+			throw new IllegalArgumentException("User email already exists");
+		}
+		user.setUserId(0);
+ 		user.setUserPassword(passwordEncoder.encode(user.getUserPassword()));
 		user.setUserStatus("Active");
 		return userRepository.save(user);
 	}

@@ -43,4 +43,5 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.deser.std.DateDeserializers.SqlDateDeserializer"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
 </qualifiedTypeNameHistroy>

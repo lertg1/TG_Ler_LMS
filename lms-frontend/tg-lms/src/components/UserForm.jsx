@@ -1,5 +1,4 @@
-"use client"
-
+// Desc: This file contains the form for adding and editing users. It is used in the UserList component.
 import { useState, useEffect } from "react"
 import "../styles/Forms.css"
 

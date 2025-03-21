@@ -1,19 +1,17 @@
-"use client"
 
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { useAuth } from "../../contexts/AuthContext"
 import "../../styles/Auth.css"
+import axios from "axios"
 
 function Register() {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-    phoneNumber: "",
-    address: "",
+    userID: 0,
+    userName: "",
+    userEmail: "",
+    userPassword: "",
+    confirmPassword: ""
   })
   const [errorMessage, setErrorMessage] = useState("")
   const [successMessage, setSuccessMessage] = useState("")
@@ -34,12 +32,12 @@ function Register() {
     setSuccessMessage("")
 
     // Basic validation
-    if (formData.password !== formData.confirmPassword) {
+    if (formData.userPassword !== formData.confirmPassword) {
       setErrorMessage("Passwords do not match")
       return
     }
 
-    if (formData.password.length < 6) {
+    if (formData.userPassword.length < 6) {
       setErrorMessage("Password must be at least 6 characters long")
       return
     }
@@ -47,9 +45,9 @@ function Register() {
     try {
       // Filter out confirmPassword before sending to API
       const { confirmPassword, ...registrationData } = formData
-      await register({
+      await axios.post("http://localhost:8080/api/auth/register", {
         ...registrationData,
-        role: "MEMBER", // Default role for registration
+        userRole: "member" // Default role for registration
       })
 
       setSuccessMessage("Registration successful! Redirecting to login...")
@@ -58,8 +56,13 @@ function Register() {
       setTimeout(() => {
         navigate("/login")
       }, 2000)
-    } catch (err) {
-      setErrorMessage(err.message || "Failed to register account")
+    } catch (error) {
+      if(error.response) {
+        console.error(error.response.data.message);
+      } else {
+        console.error("An unexpected error occured");
+      }
+      setErrorMessage(error.message || "Failed to register account")
     }
   }
 
@@ -76,54 +79,52 @@ function Register() {
 
         <form onSubmit={handleSubmit} className="auth-form">
           <div className="form-row">
+          <div className="form-group">
+              <label htmlFor="userId">User ID</label>
+              <input
+                type="integer"
+                id="userId"
+                name="userId"
+                value={formData.userId}
+                onChange={handleChange}
+                placeholder="Enter your User ID"
+                required
+              />
+            </div>
             <div className="form-group">
-              <label htmlFor="firstName">First Name</label>
+              <label htmlFor="userName">User Name</label>
               <input
                 type="text"
-                id="firstName"
-                name="firstName"
-                value={formData.firstName}
+                id="userName"
+                name="userName"
+                value={formData.userName}
                 onChange={handleChange}
-                placeholder="First name"
+                placeholder="Enter your User name"
                 required
               />
             </div>
 
-            <div className="form-group">
-              <label htmlFor="lastName">Last Name</label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                placeholder="Last name"
-                required
-              />
-            </div>
+            
           </div>
 
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="userEmail">Email</label>
             <input
               type="email"
-              id="email"
-              name="email"
-              value={formData.email}
+              name="userEmail"
+              value={formData.userEmail}
               onChange={handleChange}
               placeholder="Enter your email"
               required
             />
           </div>
 
-          <div className="form-row">
             <div className="form-group">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="userPassword">Password</label>
               <input
                 type="password"
-                id="password"
-                name="password"
-                value={formData.password}
+                name="userPassword"
+                value={formData.userPassword}
                 onChange={handleChange}
                 placeholder="Create a password"
                 required
@@ -134,7 +135,6 @@ function Register() {
               <label htmlFor="confirmPassword">Confirm Password</label>
               <input
                 type="password"
-                id="confirmPassword"
                 name="confirmPassword"
                 value={formData.confirmPassword}
                 onChange={handleChange}
@@ -142,32 +142,7 @@ function Register() {
                 required
               />
             </div>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="phoneNumber">Phone Number</label>
-            <input
-              type="tel"
-              id="phoneNumber"
-              name="phoneNumber"
-              value={formData.phoneNumber}
-              onChange={handleChange}
-              placeholder="Enter your phone number"
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="address">Address</label>
-            <textarea
-              id="address"
-              name="address"
-              value={formData.address}
-              onChange={handleChange}
-              placeholder="Enter your address"
-              required
-            ></textarea>
-          </div>
+          
 
           <button type="submit" className="auth-button" disabled={loading}>
             {loading ? "Creating Account..." : "Register"}

@@ -1,8 +1,11 @@
 package com.tg.lms_backend.service;
 
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -29,6 +32,45 @@ public class UserService implements UserDetailsService {
                 .roles("USER")
                 .build();
     }
+//	
+//	public String createPasswordResetToken(String mail) {
+//		// Find the user by email
+//		User user = userRepository.findByUserEmail(mail).orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + mail));
+//		
+//		// Generate a unique token
+//		String token = UUID.randomUUID().toString();
+//		
+//		// Create a PasswordResetToken object
+//		PasswordResetToken passwordResetToken = new PasswordResetToken(token, user);
+//		
+//		// Save the token to the repository
+//		PasswordResetTokenRepository.save(passwordResetToken);
+//		return token;
+//	}
+//	
+//	public void sendPasswordResetEmail(String email, String token) {
+//		String resetUrl = "http://localhost:8080/api/auth/reset-password?token="+token;
+//		SimpleMailMessage emailMessage = new SimpleMessage();
+//		emailMessage.setTo(mail);
+//		emailMessage.setSubject("Password Reset Request");
+//		emailMessage.setText("To reset your password, click the link below:\n" + resetUrl);
+//		mailSender.send(emailMessage);
+//	}
+//	
+//	public boolean resetPassword(String token, String newPassword) {
+//		PasswordResetToken passwordResetToken = passwordResetTokenRepository.findByToken(token);
+//		if (passwordResetToken == null || passwordResettoken.isExpired()) {
+//			return false;
+//		}
+//		
+//		User user = passwordResetToken.getUser();
+//		user.setUserPassword(passwordEncoder.encode(newPassword));
+//		userRepository.save(user);
+//		
+//	}
+//	
+//	User user = passwordResetToken.getUser();
+//	user.setUserPassword(passwordEncoder.encode(newPassword));
 	
 	public User registerUser(User user, PasswordEncoder passwordEncoder) {
 //		if(user.getUserId() !=0 && userRepository.existsById(user.getUserId())) {
@@ -37,7 +79,7 @@ public class UserService implements UserDetailsService {
 //		if (userRepository.existsByUserEmail(user.getUserEmail())) {
 //			throw new IllegalArgumentException("User email already exists");
 //		}
-		user.setUserId(0);
+		user.setUserId(user.getUserId());
  		user.setUserPassword(passwordEncoder.encode(user.getUserPassword()));
 		user.setUserStatus("Active");
 		return userRepository.save(user);
@@ -101,5 +143,7 @@ public class UserService implements UserDetailsService {
 		// TODO Auto-generated method stub
 		return userRepository.findByUserEmail(email).orElse(null);
 	}
+	
+
 
 }

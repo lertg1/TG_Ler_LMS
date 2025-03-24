@@ -4,9 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,13 +22,16 @@ import com.tg.lms_backend.service.UserService;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins="/localhost:3000")
+@CrossOrigin(origins="/localhost:5173")
 public class AuthController {
 	@Autowired
 	private UserService userService;
 	
+	
 	@Autowired 
 	private PasswordEncoder passwordEncoder;
+	
+	
 //	 Register a new user	
 	@PostMapping("/register")
 	public ResponseEntity<String>registerUser(@RequestBody User user){
@@ -38,12 +44,15 @@ public class AuthController {
 		return ResponseEntity.ok("user registered successfully");
 	}
 
-//	@PostMapping("/register")
-//	public User registerUser(@RequestBody User user) {
-//		//TODO: process POST request
-//		return userService.registerUser(user, passwordEncoder);
-//	}
-//	
+	@GetMapping("/current-user")
+	public ResponseEntity<User> getCurrentUser(){
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		String currentUserName = authentication.getName();
+		User currentUser = userService.getUserByEmail(currentUserName);
+		return ResponseEntity.ok(currentUser);
+	}
+	
+
 	@PostMapping("/login")
 	public ResponseEntity<String> authenticateUser(@RequestBody LoginRequest loginRequest) {
 		try {

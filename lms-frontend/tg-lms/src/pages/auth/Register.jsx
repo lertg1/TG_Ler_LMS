@@ -11,7 +11,7 @@ function Register() {
     userName: "",
     userEmail: "",
     userPassword: "",
-    confirmPassword: ""
+    confirmPassword: "",
   })
   const [errorMessage, setErrorMessage] = useState("")
   const [successMessage, setSuccessMessage] = useState("")

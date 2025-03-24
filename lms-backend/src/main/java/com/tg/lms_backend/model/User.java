@@ -21,6 +21,7 @@ public class User {
 	private Date createdAt;
 	private Date updatedAt;
 	private Number userFine;
+	private String resetPasswordToken;
 	
 	// Constructor
 	public User() {
@@ -28,7 +29,7 @@ public class User {
 	};
 	
 	public User(int userId, String userName, String userEmail, String userPassword, String userStatus, String userRole, String userDepartment, Date createdAt,
-			Date updatedAt, Number userFine) {
+			Date updatedAt, Number userFine, String resetPasswordToken) {
 		super();
 		this.userId = userId;
 		this.userName = userName;
@@ -40,6 +41,7 @@ public class User {
 		this.createdAt = createdAt;
 		this.updatedAt = updatedAt;
 		this.userFine=userFine;
+		this.resetPasswordToken=resetPasswordToken;
 	}
 	
 //Getters and Setters
@@ -121,6 +123,14 @@ public class User {
 
 	public void setUserFine(Number userFine) {
 		this.userFine = userFine;
+	}
+
+	public String getResetPasswordToken() {
+		return resetPasswordToken;
+	}
+
+	public void setResetPasswordToken(String resetPasswordToken) {
+		this.resetPasswordToken = resetPasswordToken;
 	}
 	
 

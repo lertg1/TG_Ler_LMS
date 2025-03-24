@@ -43,9 +43,9 @@ function MemberNavbar({ activeTab, setActiveTab, user, onLogout }) {
         <div className={`navbar-user ${showMobileMenu ? "active" : ""}`}>
           <div className="user-info">
             <span className="user-name">
-              {user?.firstName} {user?.lastName}
+              {user?.userName}
             </span>
-            <span className="user-role">{user?.role}</span>
+            <span className="user-role">{user?.userRole}</span>
           </div>
           <button className="logout-button" onClick={handleLogout}>
             Logout

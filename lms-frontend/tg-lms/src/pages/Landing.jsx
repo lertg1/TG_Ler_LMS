@@ -11,7 +11,7 @@ function Landing() {
       <header className="landing-header">
         <nav className="landing-nav">
           <div className="logo">
-            <h1>Library MS</h1>
+            <h1>Member page</h1>
           </div>
           <div className="nav-links">
             {!user ? (
@@ -24,7 +24,8 @@ function Landing() {
                 </button>
               </>
             ) : (
-              <button className="dashboard-btn" onClick={() => navigate(user.role === "STAFF" ? "/admin" : "/member")}>
+                // <button className="dashboard-btn" onClick={() => navigate(user.role === "STAFF" ? "/admin" : "/member")}>
+                  <button className="dashboard-btn" onClick={() => navigate("/admin")}>
                 Dashboard
               </button>
             )}

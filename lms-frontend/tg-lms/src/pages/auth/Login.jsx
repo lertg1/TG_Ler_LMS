@@ -95,11 +95,11 @@ function Login() {
             />
           </div>
 
-          <div className="form-extra">
+          {/* <div className="form-extra">
             <Link to="/forgot-password" className="forgot-password">
               Forgot Password?
             </Link>
-          </div>
+          </div> */}
 
           <button type="submit" className="auth-button" disabled={loading}>
             {loading ? "Logging in..." : "Login"}

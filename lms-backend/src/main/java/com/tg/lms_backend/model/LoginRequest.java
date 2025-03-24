@@ -11,6 +11,7 @@ public class LoginRequest {
 	private int userId;
 	private String userEmail;
 	private String userPassword;
+
 	
 	// Constructor
 	

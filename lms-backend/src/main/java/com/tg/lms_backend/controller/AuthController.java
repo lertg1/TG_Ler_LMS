@@ -26,18 +26,28 @@ public class AuthController {
 	
 	@Autowired 
 	private PasswordEncoder passwordEncoder;
-	
+//	 Register a new user	
 	@PostMapping("/register")
-	public User registerUser(@RequestBody User user) {
-		//TODO: process POST request
-		return userService.registerUser(user, passwordEncoder);
+	public ResponseEntity<String>registerUser(@RequestBody User user){
+		try {
+			userService.registerUser(user, passwordEncoder);
+		} catch(IllegalArgumentException ex) {
+			return ResponseEntity.status(HttpStatus.IM_USED).body(ex.getMessage());
+			
+		}	
+		return ResponseEntity.ok("user registered successfully");
 	}
-	
+
+//	@PostMapping("/register")
+//	public User registerUser(@RequestBody User user) {
+//		//TODO: process POST request
+//		return userService.registerUser(user, passwordEncoder);
+//	}
+//	
 	@PostMapping("/login")
 	public ResponseEntity<String> authenticateUser(@RequestBody LoginRequest loginRequest) {
 		try {
-			User user =userService.authenticateUser(loginRequest.getUserEmail(), loginRequest.getUserPassword(), passwordEncoder);
-//			return userService.authenticateUser(user.getUserEmail(), user.getUserPassword(), passwordEncoder);
+			userService.authenticateUser(loginRequest.getUserEmail(), loginRequest.getUserPassword(), passwordEncoder);
 		} catch (UsernameNotFoundException | BadCredentialsException ex) {
 			// TODO Auto-generated catch block
 			return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(ex.getMessage());

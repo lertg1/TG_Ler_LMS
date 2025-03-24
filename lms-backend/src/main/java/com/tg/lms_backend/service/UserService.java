@@ -31,12 +31,12 @@ public class UserService implements UserDetailsService {
     }
 	
 	public User registerUser(User user, PasswordEncoder passwordEncoder) {
-		if(user.getUserId() !=0 && userRepository.existsById(user.getUserId())) {
-			throw new IllegalArgumentException("User ID already exists.");
-		}
-		if (userRepository.existsByUserEmail(user.getUserEmail())) {
-			throw new IllegalArgumentException("User email already exists");
-		}
+//		if(user.getUserId() !=0 && userRepository.existsById(user.getUserId())) {
+//			throw new IllegalArgumentException("User ID already exists.");
+//		}
+//		if (userRepository.existsByUserEmail(user.getUserEmail())) {
+//			throw new IllegalArgumentException("User email already exists");
+//		}
 		user.setUserId(0);
  		user.setUserPassword(passwordEncoder.encode(user.getUserPassword()));
 		user.setUserStatus("Active");
@@ -93,8 +93,13 @@ public class UserService implements UserDetailsService {
 
 	public void deleteUser(int id) {
 		// TODO Auto-generated method stub
-		userRepository.deleteById(id);;
+		userRepository.deleteById(id);
 		
+	}
+
+	public User getUserByEmail(String email) {
+		// TODO Auto-generated method stub
+		return userRepository.findByUserEmail(email).orElse(null);
 	}
 
 }

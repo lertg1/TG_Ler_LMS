@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 
 import com.tg.lms_backend.BookNotAvailableException;
 import com.tg.lms_backend.BookNotFoundException;
+import com.tg.lms_backend.BookNotLoanedException;
 import com.tg.lms_backend.ResourceNotFoundException;
+import com.tg.lms_backend.UserNotFoundException;
 import com.tg.lms_backend.model.Book;
 import com.tg.lms_backend.model.Transaction;
 import com.tg.lms_backend.model.User;
@@ -90,7 +92,7 @@ public class BookService {
 		}
 		// Retrieve the user by ID
 		User user = userRepository.findById(userId)
-			    .orElseThrow(() -> new RuntimeException("User not found"));
+			    .orElseThrow(() -> new UserNotFoundException("User not found"));
 		// Set the book as loaned and assign it to the user
 		book.setLoaned(true);
 		book.setLoanedTo(user);
@@ -120,6 +122,10 @@ public Transaction createTransaction(Book book, User user, Date dueDate, Date re
 
 	public Book returnBook(int bookId) {
 		Book book = bookRepository.findById(bookId).orElseThrow(( )-> new RuntimeException("Book not found"));
+		// Check if the item is currently loaned
+		if (!book.getLoaned()) {
+			throw new BookNotLoanedException("Item is currently not on loan");
+		}
 		User user = book.getLoanedTo();
 		book.setLoaned(false);
 		book.setLoanedTo(null);

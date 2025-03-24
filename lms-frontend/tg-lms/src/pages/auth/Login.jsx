@@ -26,30 +26,35 @@ function Login() {
       setErrorMessage("Please enter both email and password")
       return
     }
-
+    // await login(email, password)
     try {
-      const user = await axios.post("http://localhost:8080/api/auth/login", {
-        userEmail: email, userPassword: password
-      })
+      const response = await axios.post("http://localhost:8080/api/auth/login", {
+        userEmail: email, userPassword: password,
+      });
+    
       setSuccessMessage("Login successful! Redirecting...")
-      // await login(email, password)
-
+      // Redirect to login after successful registration
+      setTimeout(() => {
+        navigate("/")
+      }, 2000)
       // Redirect based on role
-      if (user.role === "staff") {
+      const userDetails = await axios.get(`http://localhost:8080/api/users/email/${email}`);
+      const role = userDetails.data.userRole;
+
+      if (role === "staff") {
         navigate("/admin")
       } else {
         navigate("/member")
       }
     } catch (error) {
       if (error.response) {
-      console.error(error.response.data.message);
+        setErrorMessage(error.response.data.message || "Failed to login");
 
       } else {
-        console.error("An unexpected error occured");
+        setErrorMessage("An unexpected error occured");
+      }
     }
-      setErrorMessage(error.message || "Failed to login")
-    }
-  }
+  };
 
   return (
     <div className="auth-container">

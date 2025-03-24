@@ -48,22 +48,24 @@ function Register() {
       await axios.post("http://localhost:8080/api/auth/register", {
         ...registrationData,
         userRole: "member" // Default role for registration
-      })
-
-      setSuccessMessage("Registration successful! Redirecting to login...")
+      });
+      setSuccessMessage("Registration successful! Redirecting to login...");
+    } catch (error) {
+      if (error.response && error.response.status === 226) {
+        console.error(error.response.data.message);
+      } else if (error.request) {
+        console.error("Network error. Please try again");
+      } else {
+        console.error("An unexpected error occured");
+      }
+      setErrorMessage(error.response ? error.response.data :error.message || "Failed to sign up")
+    }
 
       // Redirect to login after successful registration
       setTimeout(() => {
         navigate("/login")
       }, 2000)
-    } catch (error) {
-      if(error.response) {
-        console.error(error.response.data.message);
-      } else {
-        console.error("An unexpected error occured");
-      }
-      setErrorMessage(error.message || "Failed to register account")
-    }
+    
   }
 
   return (

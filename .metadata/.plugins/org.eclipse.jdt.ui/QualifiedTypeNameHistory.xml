@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
-    <fullyQualifiedTypeName name="com.tg.lms_backend.repository.UserRepository"/>
     <fullyQualifiedTypeName name="com.tg.lms_backend.config.enableWebSecurity"/>
     <fullyQualifiedTypeName name="org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration"/>
     <fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
@@ -32,7 +31,6 @@
     <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
     <fullyQualifiedTypeName name="org.springframework.data.repository.core.support.TransactionalRepositoryFactoryBeanSupport"/>
     <fullyQualifiedTypeName name="com.tg.lms_backend.repository.TransactionRepository"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.deser.std.DateDeserializers.SqlDateDeserializer"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
@@ -48,5 +46,8 @@
     <fullyQualifiedTypeName name="java.util.UUID"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.mail.SimpleMailMessage"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="com.tg.lms_backend.repository.UserRepository"/>
 </qualifiedTypeNameHistroy>

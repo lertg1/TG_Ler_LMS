@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column ;
+  margin: auto;
+  margin-top: 50px;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  background-color: #b1dbff;
+  padding-bottom: 30px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000d36;
+}
+
+.underline {
+    width: 61px;
+    height: 6px;
+    border-radius: 9px;
+    background-color: #031a9c;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.input {
+    width: 480px;
+    height: 80px;
+    margin: auto;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.5);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.input img {
+    margin: 0px 30px;
+}
+
+.input input {
+    width: 480px;
+    height: 60px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(25, 25, 25);
+    font-size: 19px;  
+}
+
+.forgot-password {
+    padding-left: 20px;
+    margin-top: 27px;
+    font-size: 18px;
+    color: rgb(11, 2, 95);
+}
+.not-member {
+    padding-left: 20px;
+    margin-top: 27px;
+    font-size: 18px;
+    color: rgb(11, 2, 95);
+}
+.forgot-password span {
+    color: #260060;
+    cursor: pointer;
+}
+
+.not-member span {
+    color: #260060;
+    cursor: pointer;
+}
+
+.submit-container {
+    display: flex;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 500px;
+    height: 59px;
+    border: none;
+    border-radius: 10px;
+    background-color: #031a9c;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}   
+
+.gray {
+    background-color: gray;
+color: darkgray;
+}

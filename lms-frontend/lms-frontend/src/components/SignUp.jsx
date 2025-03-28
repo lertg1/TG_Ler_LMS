@@ -52,7 +52,7 @@ const SignUp = () => {
                     <div className="inputs">
                         <div className="input">
                             <input
-                                type="text"
+                                type="integer"
                                 id="userId"
                                 autoComplete='userId'
                                 name="userId"

@@ -2,6 +2,7 @@ import { useState } from "react"
 import "./AdminDashboard.css"
 import Sidebar from "./Sidebar"
 import ManageItems from "./ManageItems"
+import ManageUsers from "./ManageUsers"
 
 function AdminDashboard() {
   const [currentPage, setCurrentPage] = useState("manageItems")
@@ -11,11 +12,7 @@ function AdminDashboard() {
       case "manageItems":
         return <ManageItems />
       case "manageUsers":
-        return (
-          <div className="content-area">
-            <h1>Manage Users</h1>
-          </div>
-        )
+        return <ManageUsers />
       case "circulation":
         return (
           <div className="content-area">

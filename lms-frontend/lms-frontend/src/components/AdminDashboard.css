@@ -176,6 +176,12 @@
   
   .book-list {
     display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+  .user-list {
+    display: flex;
+    justify-content: left;
     flex-direction: column;
   }
   
@@ -186,14 +192,24 @@
     padding: 15px 0;
     border-bottom: 1px solid #eee;
   }
-  
+  .user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
   .book-title {
     font-weight: bold;
+    font-size: 20px;
+    text-align: left;
     margin-bottom: 5px;
   }
   
   .book-author {
     color: #666;
+    font-size: 15px;
+    text-align: left;
   }
   
   .edit-button {
@@ -209,4 +225,54 @@
     background-color: #f5f5f5;
   }
   
+
+/* Edit Form Styles */
+.edit-form {
+    max-width: 800px;
+  }
   
+  .form-group {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .form-group label {
+    width: 150px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+  
+  .update-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .action-bar {
+    margin-bottom: 30px;
+  }

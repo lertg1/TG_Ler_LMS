@@ -1,22 +1,20 @@
 
 import { useState } from "react"
 import BookList from "./BookList"
+import { useNavigate } from 'react-router-dom';
+import AddBook from "./AddBook";
 
 function ManageItems() {
-  const [searchQuery, setSearchQuery] = useState("")
-  const [selectedCategory, setSelectedCategory] = useState("Library Catalog")
+    const navigate = useNavigate();
+    const [searchQuery, setSearchQuery] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState("Library Catalog");
+    const [books, setBooks] = useState([]);
+    const [view, setView] = useState("list");
+    const [selectedBook, setSelectedBook] = useState(null);
 
-  // Sample book data
-  const books = [
-    { id: 1, title: "Book Title", author: "Author" },
-    { id: 2, title: "Book Title", author: "Author" },
-    { id: 3, title: "Book Title", author: "Author" },
-    { id: 4, title: "Book Title", author: "Author" },
-    { id: 5, title: "Book Title", author: "Author" },
-    { id: 6, title: "Book Title", author: "Author" },
-    { id: 7, title: "Book Title", author: "Author" },
-  ]
-
+  const redirectToSignIn = () => {
+      navigate('/Login');
+}
   const handleSearch = (e) => {
     e.preventDefault()
     // Implement search functionality here
@@ -25,22 +23,34 @@ function ManageItems() {
 
   const handleAddBook = () => {
     // Implement add book functionality
-    console.log("Add book clicked")
+      console.log("Add a new item")
+    setView("add")
   }
-
+      // Implement edit functionality
+      if (view === "edit") {
+        return <EditBook book={selectedBook} onClose={() => {
+            setView("list"); setSelectedBook(null)
+    }
+}/>;
+    } else if (view === "add") {
+        return <AddBook onClose={() => {
+            setView("list"); setSelectedBook(null)
+    }
+}/>;
+};   
   return (
     <div className="content-area">
       <div className="header-container">
         <h1>Manage Items</h1>
-        <button className="logout-button">Logout</button>
+        <button className="logout-button" onClick={redirectToSignIn}>Logout</button>
       </div>
 
       <div className="search-container">
         <div className="dropdown">
           <button className="dropdown-button">{selectedCategory}</button>
           <div className="dropdown-content">
-            <a href="#" onClick={() => setSelectedCategory("Library Catalog")}>
-              Library Catalog
+            <a href="#" onClick={() => setSelectedCategory("Book ID")}>
+              Book ID
             </a>
             <a href="#" onClick={() => setSelectedCategory("Title")}>
               Title

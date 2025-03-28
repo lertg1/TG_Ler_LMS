@@ -1,27 +1,22 @@
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import axios from "axios";
 
 function CheckOut() {
-  const [userId, setUserId] = useState("")
-  const [bookId, setBookId] = useState("")
+    const [userId, setUserId] = useState("");
+    const [bookId, setBookId] = useState("");
+    const [checkOutBooks, setCheckedOutBooks] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-  // Sample checked out books data
-  const checkedOutBooks = [
-    { id: 1, title: "Book Title", author: "Author", dueDate: "15/05/2025" },
-    { id: 2, title: "Book Title", author: "Author", dueDate: "15/05/2025" },
-    { id: 3, title: "Book Title", author: "Author", dueDate: "15/05/2025" },
-    { id: 4, title: "Book Title", author: "Author", dueDate: "15/05/2025" },
-    { id: 5, title: "Book Title", author: "Author", dueDate: "15/05/2025" },
-  ]
 
-  const handleCheckOut = (e) => {
-    e.preventDefault()
-    // Implement check out functionality
-    console.log("Checking out book:", bookId, "for user:", userId)
-    // Reset form
-    setUserId("")
-    setBookId("")
-  }
+    const handleCheckOut = async (e) => {
+        e.preventDefault()
+        const response = await axios.post(`http:localhost:8080/api/books/${bookId}/borrow/${userId}`);
+        if (response.ok) {
+            console.log(`Successfully checked out ${bookId} to ${userId}`)
+        }
+    }
 
   return (
     <div className="content-area">

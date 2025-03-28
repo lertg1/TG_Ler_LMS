@@ -3,6 +3,7 @@ import "./AdminDashboard.css"
 import Sidebar from "./Sidebar"
 import ManageItems from "./ManageItems"
 import ManageUsers from "./ManageUsers"
+import CirculationManager from "./CirculationManager"
 
 function AdminDashboard() {
   const [currentPage, setCurrentPage] = useState("manageItems")

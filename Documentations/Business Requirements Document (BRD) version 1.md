@@ -2,7 +2,10 @@
 
 # Project Overview 
 
-The Library Management System is crafted to offer a user-friendly web-based platform for overseeing library operations. This system enables users to search for books, borrow and return them, view borrowing history and receive notifications about overdue items. Librarian, members and borrowing/returning processes can manage the book inventory.
+The Library Management System is built to offer a user-friendly web-based platform for both library member and library staff. This system enables library members to search for books, borrow and return them, view borrowing history and receive notifications about overdue items. The system enables library staff to do additional functionality, manage the book and user records(add, edit, delete). 
+This is a full stack development using Spring Boot for backend, MySQL as our database management system and REACT for the frontend. 
+
+
 
 ## Objectives 
 

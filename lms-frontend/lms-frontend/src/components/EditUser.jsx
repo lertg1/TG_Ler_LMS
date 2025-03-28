@@ -30,9 +30,42 @@ function EditUser({user, onClose}) {
       [name]: value,
     }))
   }
-
-  const handleSubmit = async (e) => {
-      e.preventDefault();
+ 
+    const handleDelete = async () => {
+  
+    try {
+        const response = await axios.delete(`http://localhost:8080/api/users/${userData.userId}`);
+        
+        if (response.status === 204) {
+            alert('User deleted successfully');
+            if (onClose) {
+                onClose();
+            } else {
+                navigate(-1);
+            }
+        }
+    } catch (error) {
+        if (error.response) {
+            switch (error.response.status) {
+                case 401:
+                    alert('Unauthorized - Please log in again');
+                    break;
+                case 403:
+                    alert('Forbidden - You do not have permission to delete this user');
+                    break;
+                case 404:
+                    alert('User not found');
+                    break;
+                default:
+                    alert('Error deleting user: ' + (error.response.data.message || 'Unknown error'));
+            }
+        } else {
+            alert('Network error occurred while deleting user');
+        }
+        console.error('Delete error:', error);
+    }
+};
+  const handleSubmit = async () => {
       try {
           const response = await axios.put(`http://localhost:8080/api/users/${userData.userId}`, userData, {
               headers: {
@@ -166,8 +199,14 @@ function EditUser({user, onClose}) {
         <div className="form-actions">
           <button type="submit" className="update-button">
             Update
+                  </button>
+                  
+            <button type="button" className="delete-button" onClick={handleDelete}>
+            Delete
           </button>
-        </div>
+              </div>
+
+
       </form>
     </div>
   )

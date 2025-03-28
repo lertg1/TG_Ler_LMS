@@ -32,7 +32,11 @@ function ManageUsers() {
         setSelectedUser(user);
         setView("edit");
     };
-
+    const handleDelete = (user) => {
+        console.log(`Deleting ${user.userId}`);
+        setSelectedUser(user);
+        setView("delete");
+    };
     const handleAddUser = () => {
         console.log("Register a new user")
         setSelectedUser(null)
@@ -73,12 +77,12 @@ function ManageUsers() {
               <div className="user-info">
                 <div className="user-name">{user.userName}</div>
                 <div className="user-details">
-                  {user.userEmail} • {user.userRole}
+                          {user.userId} . {user.userEmail} • {user.userRole}
                 </div>
               </div>
-              <button className="edit-button" onClick={() => handleEdit(user)}>
+                  <button className="edit-button" onClick={() => handleEdit(user)}>
                 EDIT
-              </button>
+                  </button>
             </div>
           ))}
         </div>

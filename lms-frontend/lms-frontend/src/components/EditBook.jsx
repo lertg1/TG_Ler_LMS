@@ -32,7 +32,40 @@ function EditBook({book, onClose}) {
       [name]: value,
     }))
   }
-
+  const handleDelete = async () => {
+  
+    try {
+        const response = await axios.delete(`http://localhost:8080/api/books/${bookData.bookId}`);
+        
+        if (response.status === 204) {
+            alert('Book deleted successfully');
+            if (onClose) {
+                onClose();
+            } else {
+                navigate(-1);
+            }
+        }
+    } catch (error) {
+        if (error.response) {
+            switch (error.response.status) {
+                case 401:
+                    alert('Unauthorized - Please log in again');
+                    break;
+                case 403:
+                    alert('Forbidden - You do not have permission to delete this user');
+                    break;
+                case 404:
+                    alert('Book not found');
+                    break;
+                default:
+                    alert('Error deleting user: ' + (error.response.data.message || 'Unknown error'));
+            }
+        } else {
+            alert('Network error occurred while deleting user');
+        }
+        console.error('Delete error:', error);
+    }
+};
   const handleSubmit = async (e) => {
       e.preventDefault();
       try {
@@ -197,6 +230,9 @@ function EditBook({book, onClose}) {
         <div className="form-actions">
           <button type="submit" className="update-button">
             Update
+                  </button>                                    
+            <button type="button" className="delete-button" onClick={handleDelete}>
+            Delete
           </button>
         </div>
       </form>

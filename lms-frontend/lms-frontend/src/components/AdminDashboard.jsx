@@ -14,11 +14,7 @@ function AdminDashboard() {
       case "manageUsers":
         return <ManageUsers />
       case "circulation":
-        return (
-          <div className="content-area">
-            <h1>Circulation</h1>
-          </div>
-        )
+        return <CirculationManager/>
       default:
         return <ManageItems />
     }

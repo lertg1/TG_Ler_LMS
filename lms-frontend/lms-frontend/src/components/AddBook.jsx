@@ -33,7 +33,7 @@ function AddBook() {
   }
   const handleChange = (e) => {
     const { name, value } = e.target
-    setbookData((prevData) => ({
+    setBookData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
@@ -49,11 +49,11 @@ function AddBook() {
               }
           });
           // Implement update functionality
-          console.log("Updating user with data:", bookData)
+          console.log("Updating book with data:", bookData)
       
           if (response.status === 200) {
-            console.log("User updated successfully:", response.data);
-            alert("User added successfully");
+            console.log("Book updated successfully:", response.data);
+            alert("Book added successfully");
           }
       } catch (error) {
           if (error.response) {
@@ -66,7 +66,7 @@ function AddBook() {
                     console.error('Forbidden - Insufficient permissions');
                     break;
                 case 404:
-                    console.error('User not found');
+                    console.error('Book not found');
                     break;
                 default:
                     console.error('Server error:', error.response.status);

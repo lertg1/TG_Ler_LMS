@@ -19,12 +19,12 @@ public class TransactionService {
 	private TransactionRepository transactionRepository;
 	
 	@Transactional
-	public List<Transaction> getCurrentLoansByUserId(Integer userId){
-		if (userId == null) {
-			throw new IllegalArgumentException("User ID cannot be null");
-		} 
-		return transactionRepository.findByUserIdAndReturnedDateIsNull(userId);
-	}
+//	public List<Transaction> getCurrentLoansByUserId(Integer userId){
+//		if (userId == null) {
+//			throw new IllegalArgumentException("User ID cannot be null");
+//		} 
+//		return transactionRepository.findByUserIdAndReturnedDateIsNull(userId);
+//	}
 	public List<Transaction> getAllTransactions(){
 		return transactionRepository.findAll();
 	}

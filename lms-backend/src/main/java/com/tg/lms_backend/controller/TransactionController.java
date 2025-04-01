@@ -28,17 +28,17 @@ public class TransactionController {
 	private TransactionService transactionService;
 	
 	// Get transactions by userId by on loaned
-	@GetMapping("/user/{userId}/current-loans")
-    public ResponseEntity<List<Transaction>> getCurrentLoansByUserId(@PathVariable Integer userId) {
-        try {
-            List<Transaction> currentLoans = transactionService.getCurrentLoansByUserId(userId);
-            return ResponseEntity.ok(currentLoans);
-        } catch (IllegalArgumentException e) {
-            return ResponseEntity.badRequest().build();
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-        }
-    }	
+//	@GetMapping("/user/{userId}/current-loans")
+//    public ResponseEntity<List<Transaction>> getCurrentLoansByUserId(@PathVariable Integer userId) {
+//        try {
+//            List<Transaction> currentLoans = transactionService.getCurrentLoansByUserId(userId);
+//            return ResponseEntity.ok(currentLoans);
+//        } catch (IllegalArgumentException e) {
+//            return ResponseEntity.badRequest().build();
+//        } catch (Exception e) {
+//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+//        }
+//    }	
 	// Add a new Transaction
 	@PostMapping
 	public ResponseEntity<Transaction> addTransaction(@RequestBody Transaction transaction){

@@ -6057,3 +6057,48 @@ Binding(COMMAND+SHIFT+F10,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.jboss.tools.help 4 0 2025-04-01 20:14:56.799
+!MESSAGE Parser error
+
+!ENTRY org.jboss.tools.help 4 0 2025-04-01 20:14:57.140
+!MESSAGE Parser error
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-01 20:18:08.387
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.jboss.tools.help 4 0 2025-04-01 20:19:45.185
+!MESSAGE Parser error
+
+!ENTRY org.jboss.tools.help 4 0 2025-04-01 20:19:45.189
+!MESSAGE Parser error
+
+!ENTRY org.jboss.tools.help 4 0 2025-04-01 20:20:16.223
+!MESSAGE Parser error
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-01 20:22:16.792
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-01 20:22:50.651
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-01 20:23:40.353
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-01 20:30:25.426
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-01 20:31:20.410
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-01 20:32:53.963
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-01 20:33:20.994
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-01 20:34:01.560
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-01 20:34:46.187
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled

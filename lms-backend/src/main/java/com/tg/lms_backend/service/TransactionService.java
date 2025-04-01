@@ -8,6 +8,8 @@ import com.tg.lms_backend.ResourceNotFoundException;
 import com.tg.lms_backend.model.Transaction;
 import com.tg.lms_backend.repository.TransactionRepository;
 
+import jakarta.transaction.Transactional;
+
 
 
 @Service
@@ -16,6 +18,13 @@ public class TransactionService {
 	@Autowired
 	private TransactionRepository transactionRepository;
 	
+	@Transactional
+	public List<Transaction> getCurrentLoansByUserId(Integer userId){
+		if (userId == null) {
+			throw new IllegalArgumentException("User ID cannot be null");
+		} 
+		return transactionRepository.findByUserIdAndReturnedDateIsNull(userId);
+	}
 	public List<Transaction> getAllTransactions(){
 		return transactionRepository.findAll();
 	}

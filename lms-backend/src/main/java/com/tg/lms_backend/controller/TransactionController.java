@@ -3,6 +3,7 @@ package com.tg.lms_backend.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,6 +27,18 @@ public class TransactionController {
 	@Autowired
 	private TransactionService transactionService;
 	
+	// Get transactions by userId by on loaned
+	@GetMapping("/user/{userId}/current-loans")
+    public ResponseEntity<List<Transaction>> getCurrentLoansByUserId(@PathVariable Integer userId) {
+        try {
+            List<Transaction> currentLoans = transactionService.getCurrentLoansByUserId(userId);
+            return ResponseEntity.ok(currentLoans);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().build();
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }	
 	// Add a new Transaction
 	@PostMapping
 	public ResponseEntity<Transaction> addTransaction(@RequestBody Transaction transaction){

@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tg.lms_backend.model.Transaction;
 import com.tg.lms_backend.service.TransactionService;
 
-
 @RestController
 @RequestMapping("/api/transactions")
 @CrossOrigin(origins="/localhost:3000")

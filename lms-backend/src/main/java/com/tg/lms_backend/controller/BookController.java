@@ -1,8 +1,12 @@
 package com.tg.lms_backend.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -12,6 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tg.lms_backend.model.Book;
@@ -35,16 +40,40 @@ public class BookController {
 
     // Get all books
     @GetMapping
-    public ResponseEntity<List<Book>> getAllBooks() {
-        List<Book> books = bookService.getAllBooks();
-        return ResponseEntity.ok(books);
-    }
+    public ResponseEntity<Map<String, Object>> getAllBooks(
+    		@RequestParam(defaultValue = "1") int page,
+			@RequestParam(defaultValue = "10") int limit
+			) {
+try {
+	Page<Book> pageBooks = bookService.findPaginated(page-1, limit);
+	Map<String, Object> response = new HashMap<>();
+	response.put("data", pageBooks.getContent());
+	response.put("total", pageBooks.getTotalElements());
+	return ResponseEntity.ok(response);
+}catch (Exception e) {
+	return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+}
+	}
+//    @GetMapping
+//    public ResponseEntity<List<Book>> getAllBooks() {
+//        List<Book> books = bookService.getAllBooks();
+//        return ResponseEntity.ok(books);
+//    }
 
     // Get a book by ID
     @GetMapping("/{id}")
     public ResponseEntity<Book> getBookById(@PathVariable int id) {
         Book book = bookService.getBookById(id);
         return ResponseEntity.ok(book);
+    }
+    
+    @GetMapping ("/search")
+    public Page<Book> getBooks(
+            @RequestParam(required = false, defaultValue = "") String query,
+            @RequestParam(required = false, defaultValue = "all") String field,
+            @RequestParam(required = false, defaultValue = "1") int page,
+            @RequestParam(required = false, defaultValue = "10") int limit) {
+        return bookService.getBooks(query, field, page, limit);
     }
 
     // Update a book

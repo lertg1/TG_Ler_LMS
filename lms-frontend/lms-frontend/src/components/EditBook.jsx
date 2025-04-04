@@ -1,21 +1,35 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
 import "./AdminDashboard.css"
 
+
 function EditBook({book, onClose}) {
- 
   const [bookData, setBookData] = useState({
-    bookId: book? book.bookId : 0,
-    bookTitle: book? book.bookTitle : "",
-    author: book? book.author : "",
-    isbn: book? book.isbn : "",
-    category: book? book.category : "",
-    publisher: book? book.publisher : "",
-      genre: book? book.genre : "",
-      callNumber: book? book.callNumber : "",
-      bookCoverUrl: book? book.bookCoverUrl : "",
-  })
+    bookId: 0,
+    bookTitle: "",
+    author: "",
+    isbn: "",
+    category: "",
+    publisher: "",
+    genre: "",
+    callNumber: "",
+    bookCoverUrl: "",
+  });
+
+  useEffect(() => {
+    setBookData({
+      bookId: book?.bookId || 0,
+      bookTitle: book?.bookTitle || "",
+      author: book?.author || "",
+      isbn: book?.isbn || "",
+      category: book?.category || "",
+      publisher: book?.publisher || "",
+      genre: book?.genre || "",
+      callNumber: book?.callNumber || "",
+      bookCoverUrl: book?.bookCoverUrl || "",
+    });
+  }, [book]);
     const navigate = useNavigate();
 
     const handleBack = () => {
@@ -33,7 +47,11 @@ function EditBook({book, onClose}) {
     }))
   }
   const handleDelete = async () => {
-  
+    const confirmDelete = window.confirm("Are you sure you want to delete this book?");
+    // Check if the user confirmed the deletion
+    if (!confirmDelete) {
+      return; // Exit the function if the user cancels
+  }
     try {
         const response = await axios.delete(`http://localhost:8080/api/books/${bookData.bookId}`);
         
@@ -52,13 +70,13 @@ function EditBook({book, onClose}) {
                     alert('Unauthorized - Please log in again');
                     break;
                 case 403:
-                    alert('Forbidden - You do not have permission to delete this user');
+                    alert('Forbidden - You do not have permission to delete this book');
                     break;
                 case 404:
                     alert('Book not found');
                     break;
                 default:
-                    alert('Error deleting user: ' + (error.response.data.message || 'Unknown error'));
+                    alert('Error deleting book: ' + (error.response.data.message || 'Unknown error'));
             }
         } else {
             alert('Network error occurred while deleting user');

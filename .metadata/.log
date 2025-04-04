@@ -7420,3 +7420,1279 @@ java.lang.InterruptedException
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-02 21:54:30.482
 !MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:41.607
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [b0af1a23-1b82-4ed3-826b-8c79f8d6e436] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:41.609
+!MESSAGE [Info]	[ghostText] Filtered out solution matching next line
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:41.609
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 501.66758900042623 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:41.609
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:43.795
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 463.4613670008257 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:43.815
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [a6b1b711-7c5e-4da2-b096-e6fc094d5e0f] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:43.815
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:45.292
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 213.3430629996583 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:45.294
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:45.294
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [831a7fec-f558-43d2-9240-fdd5d9f79834] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:46.363
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 431.83515700045973 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:46.374
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [2dcf0890-fbdf-4730-9974-4578655d8f15] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:57:46.374
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:58:23.742
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 468.5998940002173 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:58:23.744
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [d385cb4c-b16a-4e52-9269-9919f8e13306] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:58:23.744
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:58:41.044
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 493.8510509999469 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:58:41.051
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:58:41.051
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [854eb461-b575-4f6d-bf19-299eab049da2] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:58:57.746
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 1175.9986310005188 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:58:57.752
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:58:57.752
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [2966cdaf-385a-4d1d-9aaf-cc254d0d90c3] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:59:36.762
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 574.2585779996589 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:59:36.763
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [37f815b8-29da-40ad-98a3-7ba03a8f2592] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 22:59:36.763
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:00:25.454
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [7ef03cfd-b9fa-4ee6-88f1-4a80d212b25f] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:00:25.455
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 273.75675300043076 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:00:25.455
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:00:33.869
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 238.67516200058162 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:00:33.870
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [513eba03-4819-4b8c-a07a-79c63be566b6] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:00:33.871
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:18.770
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 374.8000119999051 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:18.773
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:18.773
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [1acddcc9-7d28-4072-8dd9-b7d4325a5492] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:33.849
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 352.1446780003607 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:33.852
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:33.853
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [bad308ad-fdbf-4b41-acf2-be79d5eee240] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:34.503
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 608.1944989999756 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:34.503
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [478bef4b-76dc-4248-a216-54fde2894d7c] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:34.504
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:44.628
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 308.0450020004064 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:44.628
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [8f47a3f0-6876-4367-b2d1-38a8b4a04e1c] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:44.629
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:52.049
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 278.95251000020653 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:52.051
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:52.052
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [7726bd98-a1e5-4ae9-be0d-432004deb159] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:54.362
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 608.6261970000342 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:54.366
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:01:54.366
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [809ac7b4-f763-46bf-9dc7-32c0cd59ace3] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:10.133
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 260.0487700002268 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:10.140
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [9d21fd1f-c9f5-4e60-aa01-89fd5796c14c] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:10.141
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:24.492
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 205.80028000008315 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:24.493
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:24.493
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [07959964-af6f-476c-a942-d26dbfe39620] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:30.103
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 279.3147889999673 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:30.105
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:30.106
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [918dfd77-7134-4b84-ad55-ae3bf850f408] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:42.623
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:42.624
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [aa2c7b8d-1530-47a1-bed4-4596a5d8cfa9] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:42.624
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 211.34844699967653 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:55.785
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 271.0990180000663 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:55.785
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [3bec9725-dce6-44f7-bf92-fea9a83a56a5] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:03:55.786
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:02.374
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 234.25280400086194 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:02.376
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:02.376
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [b16aaa37-b9b0-45e1-81ae-830e8e54a622] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:21.005
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 273.34253000002354 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:21.006
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [1e4f4a53-bb6a-4501-b0ec-8939a98daf39] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:21.006
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:26.895
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [953221ee-2fd2-4cb3-a5ba-794dc3e3c7bc] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:26.895
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 207.63047899957746 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:26.896
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:44.074
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 245.60010000038892 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:44.079
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:44.079
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [07bfdd9e-9519-4551-860a-3796d243fccf] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:52.331
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 219.77533600013703 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:52.332
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [6be503c8-5fd0-4285-8701-4856c04b41f6] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:52.332
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:55.158
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 215.21073199994862 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:55.161
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:04:55.161
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [ed6f9279-3cf2-4c28-9e8b-045bb48aea70] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:04.356
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 383.6934359995648 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:04.360
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:04.360
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [4258ca03-cd6f-43a8-9911-f00ee8e8f92a] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:11.890
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 352.9032560000196 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:11.891
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [4e0741e1-ddc1-4373-9ef6-d2a57d47b8b4] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:11.891
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:14.459
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:14.460
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [e1e78b74-e60a-47fc-8720-edf9e6dcd0b2] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:14.460
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 280.37334500066936 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:30.768
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:30.770
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [5ca8f3f2-b3bb-459b-a0f7-2723e63f6c4c] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:05:30.770
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 219.73345299996436 ms
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-02 23:07:05.130
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:13.699
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [c93e8bab-a3eb-4177-8190-59c5caae0eea] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:13.700
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 537.1344770006835 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:13.700
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:13.975
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 220.00768999941647 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:13.975
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:13.975
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [5652503f-ae33-45dc-acf8-b2c736d40bd6] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:14.422
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 316.83899400010705 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:14.423
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:14.423
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [82bd5447-572f-40db-8345-af8756ee06d9] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:14.954
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 220.71765200048685 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:14.955
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [995c29f6-1b0b-46ff-add8-7cce6dd4e03b] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:14.955
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:20.166
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 243.4128719996661 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:20.167
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [21339467-e590-4525-8f48-f691f3fe9fb0] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:20.167
+!MESSAGE [Info]	[ghostText] Filtered out solution matching next line
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:20.168
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:22.863
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 410.0216190004721 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:22.865
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [41caf5fa-81b0-4b48-bc53-a806e5ee5169] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:22.865
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:26.484
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 278.390906999819 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:26.485
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [7e47bc78-0552-41d1-9771-fe7eb128fcb8] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:26.486
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:31.077
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 277.71789300069213 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:31.078
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [43c7d656-89e7-49df-b2c8-57537b8adb7d] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:31.078
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:33.938
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 279.5182509999722 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:33.939
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [897bc3a3-d219-4eea-b6f4-85f2e3ab616f] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:33.939
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:35.481
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 223.85111599974334 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:35.482
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [fc50e153-44d4-4857-8a6c-48d473e12cf8] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:35.483
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:43.498
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [0db4a33f-531a-421d-b083-9032d60aba01] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:43.500
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 252.48086000047624 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:43.500
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:55.607
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:55.609
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [5c57494e-2183-4a28-8856-c3b8c9c8cee6] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:55.609
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 380.8991030007601 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:56.005
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [5cd455f5-4c30-481e-ba9d-2a93fe267231] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:56.006
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 258.1993449991569 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:56.007
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:57.767
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:57.768
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [fa418c66-e4c5-407a-b781-f1e7a23c7647] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:08:57.768
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 213.38190899975598 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:09:30.610
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:09:30.612
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 279.5472210003063 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-02 23:09:30.612
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [76331b0c-c7b6-4b49-9e54-c636ed934e3f] model deployment ID: []
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-02 23:10:07.421
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:27:44.052
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 724.8717229962349 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:27:52.174
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:27:52.180
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [b2e994c8-2651-4574-87ee-fed4504a094b] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:27:53.430
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1281.0196850001812 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:27:53.447
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:27:53.447
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [60211a42-8b11-4d00-8bf8-b3f25df4c387] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:58:15.845
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1265.5346019864082 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:58:15.849
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [12f2acfe-0bd4-4e42-9058-0e39c4df173b] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:58:15.850
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:58:16.798
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 920.4059360027313 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:58:29.779
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [f6faa762-27d3-42fa-b253-029281ec405b] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:58:29.781
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:58:30.530
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 811.7306300103664 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:58:30.534
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [5a888b84-b2fd-4aaa-b74e-787f2b9c7001] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 19:58:30.534
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:13:01.454
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 1197.3930929899216 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:13:01.490
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:13:01.520
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [bbceafc2-7501-460d-abc8-4a26c10fb09b] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:13:02.402
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 547.5252220034599 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:13:02.407
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [ec4b236f-dd8f-431e-81a7-a8a253f9993d] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:13:02.408
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:13:05.855
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 239.39283899962902 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:13:05.871
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:13:05.871
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [0cae56c8-16ca-4da5-abcb-6fb15baf747f] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:03.451
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 281.45328699052334 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:03.457
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [d77017c4-64e3-4ff8-8242-78ed5dccac8f] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:03.457
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:05.130
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 230.59158599376678 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:05.131
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:05.131
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [2e46189c-cbcd-458a-9780-e4ecea3158f0] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:15.390
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:15.391
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 273.5859799981117 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:15.392
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [c68c92d2-28fc-4ca7-900d-f38cd91b8628] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:17.042
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [fa3e66e3-724f-4308-88cd-b5ce9ea43d20] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:17.044
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 222.43933299183846 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:17.044
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:49.074
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [587bdfef-c3af-4cc5-b532-cc6ccce05fc8] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:49.075
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 272.26349200308323 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:49.076
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:52.514
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 199.1440220028162 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:52.516
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [05e61a6e-cf2b-4aa6-93fe-b8e40e231223] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:52.516
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:53.155
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [39af0e3e-af3c-4aa6-bd26-8ec194d1c816] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:53.156
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:53.156
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 217.06770800054073 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:54.057
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 262.11632400751114 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:54.062
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:54.062
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [3ac99d28-a3a8-46fb-a4c8-7ca09d90f2a6] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:55.064
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:55.065
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [081ba9b9-bc06-48e7-8384-a7e5a98f6e06] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:55.066
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 214.20507399737835 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:56.287
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 315.1853170096874 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:56.288
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [58edb6bd-b5db-4389-b7ae-9b9bb863e208] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:56.288
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:57.412
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 215.5202739983797 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:57.413
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [142cd776-87e8-419b-8a41-ede80dff6607] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:57.416
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:58.214
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 294.3535960018635 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:58.216
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:58.217
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [d311eee1-891a-4470-8591-dfe4d7d65349] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:59.405
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [d4234ce5-f26c-4c71-b0d2-db08ef2aed70] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:59.405
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:14:59.406
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 229.91803200542927 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:15:01.433
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 333.3123290091753 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:15:01.435
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [7ebd9c7a-7d83-4210-9c5b-9b1e405705aa] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:15:01.435
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-03 22:15:42.991
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:17:43.866
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:17:43.873
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [cf1f7b9d-4955-4395-bafe-a4d5613c143a] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:17:43.874
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 574.3135090023279 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:17:50.620
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:17:50.621
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [e47434d3-9ed8-4f05-90a3-590bb2e9a87d] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:17:50.622
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 328.47227899730206 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:18:00.018
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 357.72496500611305 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:18:00.021
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [a4f38c89-afdb-4478-8238-68da54974e6c] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:18:00.022
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:20:42.826
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 498.7989440113306 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:20:42.827
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:20:42.828
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [77c1697c-998d-4401-bb0b-27b68fb5e051] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:20:43.105
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:20:43.106
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [028f370c-32d2-48ec-96d1-f9d9f6291199] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:20:43.107
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 232.38765200972557 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:20:46.529
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [9b874e2a-a6a1-4c88-9db2-3ec8de68d989] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:20:46.531
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 217.2842710018158 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:20:46.531
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:21:08.006
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [ba540465-7eb0-466d-9548-177b797bf399] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:21:08.007
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 262.2862830013037 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:21:08.007
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:21:16.999
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [cc8dc71f-9677-43ca-b828-30eae228e99a] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:21:17.000
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 222.12879699468613 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-03 22:21:17.001
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-03 22:22:06.429
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:57:39.067
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 674.206238001585 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:57:39.069
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [f038e33f-e898-49b3-a5d0-3facebaa087c] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:57:39.069
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:57:52.490
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 485.7366909980774 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:57:52.496
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:57:52.497
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [28aa8248-deaf-4cbb-9487-be437cfc1827] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:57:57.415
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 253.56601798534393 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:57:57.418
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [8daa1f1d-cae5-4338-99c1-adb7b9636eb0] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:57:57.419
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:00.221
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:00.222
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [d834ec46-2f11-4a9d-9197-296c669c8240] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:00.223
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 224.1490539908409 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:03.200
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 261.186273008585 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:03.201
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [ba8b36e1-f4b9-4a63-aa0f-37c880cc9950] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:03.201
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-04 22:58:22.035
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:37.829
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 267.0247330069542 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:37.833
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [faf9973a-580a-47cc-98b1-8ad5cfd1038b] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:37.834
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:41.173
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 216.43717500567436 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:41.175
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [c099a734-ef9f-4449-ac99-e2327e060959] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:41.175
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:48.175
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 302.8639139831066 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:48.179
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [8d5ccc07-1631-4ce4-9285-543e23d33e12] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:48.180
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:54.272
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:54.275
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 231.31118300557137 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 22:58:54.276
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [725e61f9-1eba-48b8-b1f2-2a9db5b26767] model deployment ID: []
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-04 22:59:13.920
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:05:48.814
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:05:48.815
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1013.2812760174274 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:05:48.815
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [3c68af6d-db10-4c3a-b740-3b644752ca00] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:05:50.330
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1498.7539430260658 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:06:31.712
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:06:31.716
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [e4effdcc-7f37-41fb-b512-129ef3288f79] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:06:32.500
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 846.2445490062237 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:06:32.501
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [b5e056f3-affe-440e-bc95-4f5247295172] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:06:32.502
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:09:42.197
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:09:42.198
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [c885b451-ccb0-49f7-9d94-90d9c492fb85] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:09:42.198
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 468.20676401257515 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:09:44.273
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 332.0709849894047 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:09:44.275
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:09:44.275
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [8a268afd-1a63-488a-8ec6-2b1cabb2e68e] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:10:14.922
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 257.76572701334953 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:10:14.923
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:10:14.923
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [add48367-3303-4fd2-ac5c-d96696f1b224] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:11:08.218
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:11:08.225
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [9d212915-59bb-40bf-8921-237bb8b5de26] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:11:08.225
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 221.76587399840355 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:17.617
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:17.623
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [4a31528e-f3b4-4f0c-b979-57c777ee8271] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:17.623
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 361.14206901192665 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:20.689
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:20.708
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [45d18c81-a34b-45c0-b8a5-2ce289d56f6a] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:20.709
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 237.4597470164299 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:24.921
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 302.09061500430107 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:24.921
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:24.922
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [df304883-d4c2-437a-908d-b563a67ebb90] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:26.338
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 233.8335699737072 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:26.339
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [9690f4fb-7148-406b-a6b2-7c6afc3c8748] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:26.340
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:35.065
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:35.066
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [230682b5-2493-43f1-b317-0d89aa125f96] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:35.066
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 294.6667540073395 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:45.453
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 224.17699000239372 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:45.455
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [a0ed6f92-dbf1-403f-acce-6d480e7a467d] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:12:45.455
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:22:26.238
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1882.5383030176163 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:22:26.246
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:22:26.247
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [cba0b53b-1d9e-4f80-b54e-5a26cf216453] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:22:27.541
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1274.3985849916935 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:22:42.389
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [ae75dab6-0153-426a-b5fb-96c260263b4f] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:22:42.390
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:22:43.333
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1004.7043440043926 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:22:43.711
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [8cf0a988-c330-4535-bf6c-889e0462013d] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-04 23:22:43.712
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:14:29.439
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [9c996594-2984-4533-bb43-bb000c7faca8] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:14:29.441
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:14:29.441
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1467.9954079985619 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:14:30.424
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 960.4725959897041 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:14:38.743
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [7f2e97d3-e174-4b35-aa73-f481fa14062f] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:14:38.745
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:14:38.859
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:14:38.860
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 894.3005949854851 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:14:38.862
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [2dee683b-2d53-42e2-a2aa-8756538c916e] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:18:46.713
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 2112.3558990061283 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:18:46.747
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:18:46.748
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [20203bae-06dc-438b-83ef-0dd63a00c511] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:18:48.353
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1574.4017589986324 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:19:04.703
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:19:04.704
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [a68e0479-d0a4-4d2e-8619-aa73c5250454] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:19:06.111
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1484.8721179962158 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:19:06.119
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 00:19:06.119
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [8d041281-320f-49e3-a15e-89a449850cb8] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:09:57.033
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1024.2534160017967 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:09:57.035
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:09:57.035
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [fdbd2cee-26c4-4b82-a811-38aceaceb8a6] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:09:57.986
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 937.9569880068302 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:10:02.345
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:10:02.347
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [e3db6282-633e-4e1f-ad5e-1efe4e29c0dd] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:10:03.253
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 946.5544440150261 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:10:03.254
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:10:03.254
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [c47526ec-4fdd-427e-b1ff-b50a3a5753c0] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:12:23.412
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 1708.6913670003414 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:12:23.417
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:12:23.417
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [54504ec0-0438-422a-bf38-9c59065dfbbb] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:12:24.305
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 880.5918509960175 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:12:34.591
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:12:34.593
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [f3c1c90b-84fb-4209-9d30-2a40f9f6967a] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:12:34.593
+!MESSAGE [Info]	[streamMessages] message 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:12:34.594
+!MESSAGE [Info]	[fetchChat] request.response: [https://api.individual.githubcopilot.com/chat/completions] took 849.91303601861 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:12:34.594
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [ed226294-9b23-4f4e-bf74-00c2ff0471ca] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:37:54.108
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 902.0312470197678 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:37:54.202
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:37:54.232
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [dbeb911e-8219-4be6-a9b0-99c85bc6fcd4] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:37:57.081
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [fdab0d1b-cbeb-4c08-a427-a22d1f32e820] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:37:57.082
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:37:57.083
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 549.4363580048084 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:38:19.570
+!MESSAGE [Info]	[ghostText] Filtered out solution matching next line
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:38:19.571
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [3a0d3a36-9b06-4fe8-8afa-fb67c236eaaf] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:38:19.571
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:38:19.572
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 336.4667389988899 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:38:20.667
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [81895e36-428f-40c0-b235-04d1615f5c3b] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:38:20.667
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:38:20.668
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 225.34720799326897 ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2025-04-05 02:39:40.444
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:430)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2140)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.checkMarkerResolution(LSPCodeActionMarkerResolution.java:157)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.getResolutions(LSPCodeActionMarkerResolution.java:103)
+	at org.springframework.tooling.boot.ls.markers.LSPBootCodeActionMarkerResolution.getResolutions(LSPBootCodeActionMarkerResolution.java:25)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectMarkerProposals(JavaCorrectionProcessor.java:318)
+	at org.eclipse.jdt.internal.ui.text.correction.JavaCorrectionProcessor.collectProposals(JavaCorrectionProcessor.java:277)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.getMarkerAnnotationFixes(ProblemHover.java:154)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.computeCompletionProposals(ProblemHover.java:95)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover$ProblemInfo.<init>(ProblemHover.java:74)
+	at org.eclipse.jdt.internal.ui.text.java.hover.ProblemHover.createAnnotationInfo(ProblemHover.java:178)
+	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractAnnotationHover.getHoverInfo2(AbstractAnnotationHover.java:755)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-05 02:39:40.960
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:430)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2140)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:44.637
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:44.641
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [ba84d72e-ed40-4e6d-a389-261c86889fec] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:44.641
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 534.9369129836559 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:44.894
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:44.896
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [dfa76c12-6458-4d34-a93e-92a78cb9d27d] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:44.896
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 215.76780700683594 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:45.158
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 220.52415001392365 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:45.159
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:45.159
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [8794a73e-ef0c-4e6a-853b-ec49a507b03c] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:47.535
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [36b502db-c518-4d39-9881-225309d122c4] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:47.535
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:47.536
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 228.4055179953575 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:53.878
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:53.879
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [be90f8d1-b94c-4032-b0ca-1f103b38e2b7] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:40:53.879
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 241.11677700281143 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:08.224
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 331.69433799386024 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:08.225
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:08.225
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [e0ac612e-7f7b-4842-b39b-5a6d4aec58e5] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:11.561
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:11.562
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 283.35750499367714 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:11.563
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [8a5815ba-b367-4305-a094-bd1f37538173] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:11.846
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:11.847
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 232.42394798994064 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:11.848
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [83e7d372-c47f-4a4e-8132-074db530ffe9] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:15.493
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 225.84548798203468 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:15.494
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [a5e7a694-2509-4016-9dea-ae2f2b76bffd] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:15.494
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:31.120
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 242.22350099682808 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:31.121
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [26086654-3c3b-4ebf-9cc1-492960e91a04] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:31.121
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:32.542
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:32.543
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [4cb1775d-5466-475d-9e1e-c30143eb7ed7] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:41:32.543
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 233.72682601213455 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:21.576
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:21.580
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 271.8670710027218 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:21.580
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [9baef829-2e05-4b14-8e89-16e87ce0f132] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:24.468
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:24.468
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [b9a29497-b030-476c-9385-2e31614baba1] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:24.469
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 339.1926779747009 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:29.187
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [43da3c68-7a8c-4488-8064-aa57a358773a] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:29.188
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:29.188
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 236.73148500919342 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:43.424
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 266.32593300938606 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:43.428
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:43.428
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [34bef6b5-84b2-44a7-bae5-a9d61418efe9] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:44.768
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 228.14708498120308 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:44.770
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:42:44.770
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [7960d547-9b8a-432d-8536-ee65cad22f8b] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:43:12.723
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:43:12.726
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [2cc3fd0c-ce59-4d71-a874-f92d24731028] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:43:12.726
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 222.21609097719193 ms
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:43:19.246
+!MESSAGE [Info]	[streamChoices] request done: headerRequestId: [f789b8f0-2117-4290-aa96-e775ebbf8a3a] model deployment ID: []
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:43:19.247
+!MESSAGE [Info]	[streamChoices] solution 0 returned. finish reason: [stop]
+
+!ENTRY org.eclipse.lsp4e 1 0 2025-04-05 02:43:19.247
+!MESSAGE [Info]	[fetchCompletions] request.response: [https://proxy.individual.githubcopilot.com/v1/engines/gpt-4o-copilot/completions] took 253.59737798571587 ms

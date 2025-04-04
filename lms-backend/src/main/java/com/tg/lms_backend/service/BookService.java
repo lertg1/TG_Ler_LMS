@@ -4,6 +4,9 @@ import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.tg.lms_backend.BookNotAvailableException;
@@ -138,5 +141,27 @@ public Transaction createTransaction(Book book, User user, Date dueDate, Date re
 	}
 	public void deleteBook(int id) {
 		bookRepository.deleteById(id);
+	}
+	
+    public Page<Book> getBooks(String query, String field, int page, int limit) {
+        PageRequest pageable = PageRequest.of(page - 1, limit);
+
+        switch (field) {
+            case "bookTitle":
+                return bookRepository.findByBookTitleContainingIgnoreCase(query, pageable);
+            case "author":
+                return bookRepository.findByAuthorContainingIgnoreCase(query, pageable);
+            case "category":
+                return bookRepository.findByCategoryContainingIgnoreCase(query, pageable);
+            case "bookId":
+				return bookRepository.findByBookId(Integer.parseInt(query), pageable);
+            default:
+                return bookRepository.findAll(pageable);
+        }
+    }
+    
+	public Page<Book> findPaginated(int page, int size) {
+		Pageable pageable = PageRequest.of(page, size);
+		return bookRepository.findAll(pageable);
 	}
 }
